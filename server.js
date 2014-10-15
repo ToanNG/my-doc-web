@@ -7,8 +7,6 @@ server.on('request', function(req, res){
     tmp  = pathname.lastIndexOf("."),
     extension  = pathname.substring((tmp + 1));
 
-  console.log(__dirname + '/public' + pathname);
-
   fs.readFile(__dirname + '/public' + pathname, function(err, data){
     if (err) {
       res.writeHead(500);
