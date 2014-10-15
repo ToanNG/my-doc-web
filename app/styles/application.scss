@@ -87,11 +87,20 @@ h3 {
   .logo {
     height: 90px;
     width: 200px;
-    background: transparent url(../images/logo.png) center/120px auto no-repeat;
+    background: transparent url(../images/logo.png) left/120px auto no-repeat;
   }
 
   .nav-bar {
     color: #7d94b4;
+    @include bp-small {
+      display: none;
+    }
+  }
+
+  .login-button {
+    @include bp-small {
+      display: none;
+    }
   }
 }
 
@@ -103,12 +112,22 @@ h3 {
 }
 
 .section-1 {
-  height: 610px;
+  min-height: 610px;
   text-align: center;
-  background: #f3f5f2 url(../images/hero.png) center 140px no-repeat;
+  background: #f3f5f2 url(../images/hero.png) no-repeat;
+  background-position: center bottom -130px;
+  background-size: auto;
+  @include bp-small {
+    min-height: 510px;
+    background-position: center bottom;
+    background-size: 100% auto;
+  }
 
   h1 {
     margin-top: 90px;
+    @include bp-small {
+      margin-top: 0.67em;
+    }
   }
 
   h3 {
@@ -130,8 +149,12 @@ h3 {
 .section-2 {
   height: 400px;
   border-bottom: solid thin #c3cbd6;
-  background: transparent url(../images/section1.png) no-repeat;
-  background-position: right 15px top 25px;
+  .container {
+    height: 100%;
+    background: transparent url(../images/section1.png) no-repeat;
+    background-position: right bottom -90px;
+    background-size: 60% auto;
+  }
 }
 
 .section-3 {
