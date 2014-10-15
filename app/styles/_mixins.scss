@@ -1,0 +1,65 @@
+@mixin vendor($prop, $args) {
+  -webkit-#{$prop}: $args;
+     -moz-#{$prop}: $args;
+      -ms-#{$prop}: $args;
+       -o-#{$prop}: $args;
+          #{$prop}: $args;
+}
+
+@mixin border-radius($args) {
+  @include vendor(border-radius, $args);
+}
+
+@mixin box-shadow($args) {
+  @include vendor(box-shadow, $args);
+}
+
+@mixin text-shadow($args) {
+  @include vendor(text-shadow, $args);
+}
+
+@mixin box-sizing($args) {
+  @include vendor(box-sizing, $args);
+}
+
+@mixin filter($args) {
+  @include vendor(filter, #{$args});
+}
+
+@mixin prevent-doubleclick() {
+  @include vendor(user-select, none);
+}
+
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes $animation-name {
+    @content;
+  }
+  @-moz-keyframes $animation-name {
+    @content;
+  }
+  @-ms-keyframes $animation-name {
+    @content;
+  }
+  @-o-keyframes $animation-name {
+    @content;
+  }
+  @keyframes $animation-name {
+    @content;
+  }
+}
+
+@mixin animation($args) {
+  @include vendor(animation, $args);
+}
+
+@mixin transition($args) {
+  @include vendor(transition, $args);
+}
+
+@mixin transform($args) {
+  @include vendor(transform, $args);
+}
+
+@mixin transform-origin($args) {
+  @include vendor(transform-origin, $args);
+}
