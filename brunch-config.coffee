@@ -8,7 +8,7 @@ exports.config =
         'javascripts/vendor.js': /^vendor\/(?!node)/
     stylesheets:
       defaultExtension: 'css'
-      joinTo: 'stylesheets/app.css'
+      joinTo: 'stylesheets/app.css': /application.scss/
 
   # modules:
   #   definition: false
