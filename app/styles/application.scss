@@ -214,21 +214,18 @@ p {
 // Footer // --------------------------------------------------
 
 .footer {
-  min-height: 300px;
   color: #ffffff;
   background-color: #575757;
 
-  .container {
-    padding: 50px 0;
-  }
-
   .footer-col {
+    margin: 30px 0;
     float: left;
     width: 33.33333%;
     text-align: center;
 
     @include bp-small {
       float: none;
+      margin: 40px 0;
       width: 100%;
     }
   }
