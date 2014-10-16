@@ -341,5 +341,8 @@ p {
   .patient-section-4 .content h3 {
     margin-top: 0; }
 
+.professionals-section-5, .professionals-section-6, .professionals-section-7 {
+  border-bottom: solid thin #c4cbd8; }
+
 
 /*# sourceMappingURL=app.css.map*/
