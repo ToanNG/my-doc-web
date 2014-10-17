@@ -206,21 +206,10 @@ p {
 
 
 
-.partners-section-1 {
-  background: transparent url(../images/p4_hero.png) center/cover no-repeat;
-
-  .icon {
-    width: 40px;
-    margin-right: 20px;
-  }
-}
 
 .partners-section-2 {
   img {
-    width: 70%;
-    margin: 0 auto;
-    @include bp-small {
-      width: 100%;
-    }
+    display: inline-block;
+    width: auto;
   }
 }
