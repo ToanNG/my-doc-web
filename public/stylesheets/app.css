@@ -121,6 +121,8 @@ p {
   color: #ffffff;
   background-color: #50d869;
   border: none; }
+  .btn-color.blue {
+    background-color: #7f93b6; }
 
 .list {
   padding-left: 15px; }
@@ -357,6 +359,22 @@ p {
 .partners-section-2 img {
   display: inline-block;
   width: auto; }
+
+.employers-section-2 .col-3:nth-of-type(1) .icon {
+  background: #f3f5f2 url('../images/icon10.png') center no-repeat; }
+.employers-section-2 .col-3:nth-of-type(2) .icon {
+  background: #f3f5f2 url('../images/icon8.png') center no-repeat; }
+.employers-section-2 .col-3:nth-of-type(3) .icon {
+  background: #f3f5f2 url('../images/icon2.png') center no-repeat; }
+.employers-section-2 .icon {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%; }
 
 
 /*# sourceMappingURL=app.css.map*/
