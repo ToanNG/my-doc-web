@@ -115,6 +115,15 @@ p {
   }
 }
 
+.table {
+  display: table;
+}
+
+.table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
 .bg-color {
   background-color: #f3f5f2 !important;
 }
@@ -193,3 +202,25 @@ p {
 @import "home";
 @import "patients";
 @import "professionals";
+
+
+
+
+.partners-section-1 {
+  background: transparent url(../images/p4_hero.png) center/cover no-repeat;
+
+  .icon {
+    width: 40px;
+    margin-right: 20px;
+  }
+}
+
+.partners-section-2 {
+  img {
+    width: 70%;
+    margin: 0 auto;
+    @include bp-small {
+      width: 100%;
+    }
+  }
+}

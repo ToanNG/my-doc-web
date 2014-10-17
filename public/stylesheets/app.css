@@ -130,6 +130,13 @@ p {
   .list li {
     padding: 0.25em 0; }
 
+.table {
+  display: table; }
+
+.table-cell {
+  display: table-cell;
+  vertical-align: middle; }
+
 .bg-color {
   background-color: #f3f5f2 !important; }
 
@@ -346,6 +353,19 @@ p {
   left: 0;
   right: 0;
   bottom: 0; }
+
+.partners-section-1 {
+  background: transparent url(../images/p4_hero.png) center/cover no-repeat; }
+  .partners-section-1 .icon {
+    width: 40px;
+    margin-right: 20px; }
+
+.partners-section-2 img {
+  width: 70%;
+  margin: 0 auto; }
+  @media only screen and (max-width: 768px) {
+    .partners-section-2 img {
+      width: 100%; } }
 
 
 /*# sourceMappingURL=app.css.map*/
