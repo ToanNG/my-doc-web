@@ -139,7 +139,6 @@ p {
 
 .header {
   height: 90px;
-  line-height: 90px;
   background-color: #f3f5f2;
 
   .logo {
@@ -152,6 +151,7 @@ p {
     list-style: none;
     margin: 0;
     padding: 0;
+    line-height: 90px;
     color: #7d94b4;
     @include bp-small {
       display: none;
