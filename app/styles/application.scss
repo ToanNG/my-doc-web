@@ -192,9 +192,12 @@ input, textarea {
 .header {
   height: 90px;
   background-color: #f3f5f2;
+  @include bp-small {
+    height: 60px;
+  }
 
   .logo {
-    height: 90px;
+    height: 100%;
     width: 200px;
     background: transparent url(../images/logo.png) left center/120px auto no-repeat;
   }
@@ -220,6 +223,47 @@ input, textarea {
     margin-top: 27px;
     @include bp-small {
       display: none;
+    }
+  }
+
+  #mb-menu-button {
+    display: none;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    margin-right: -20px;
+    background: transparent url(../images/menu_icon1.png) center/40% no-repeat;
+    cursor: pointer;
+
+    &.clicked {
+      background: #273759 url(../images/menu_icon2.png) center/40% no-repeat;
+
+      .menu {
+        display: block;
+      }
+    }
+
+    @include bp-small {
+      display: block;
+    }
+
+    .menu {
+      display: none;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      list-style: none;
+      min-width: 180px;
+      margin: 0;
+      padding: 0;
+      color: white;
+      background-color: #273759;
+
+      li {
+        padding: 0 20px;
+        line-height: 50px;
+        border-bottom: solid thin #445270;
+      }
     }
   }
 }

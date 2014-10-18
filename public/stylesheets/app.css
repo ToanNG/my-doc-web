@@ -191,8 +191,11 @@ input, textarea {
 .header {
   height: 90px;
   background-color: #f3f5f2; }
+  @media only screen and (max-width: 768px) {
+    .header {
+      height: 60px; } }
   .header .logo {
-    height: 90px;
+    height: 100%;
     width: 200px;
     background: transparent url(../images/logo.png) left center/120px auto no-repeat; }
   .header .nav-bar {
@@ -213,6 +216,36 @@ input, textarea {
     @media only screen and (max-width: 768px) {
       .header .login-button {
         display: none; } }
+  .header #mb-menu-button {
+    display: none;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    margin-right: -20px;
+    background: transparent url(../images/menu_icon1.png) center/40% no-repeat;
+    cursor: pointer; }
+    .header #mb-menu-button.clicked {
+      background: #273759 url(../images/menu_icon2.png) center/40% no-repeat; }
+      .header #mb-menu-button.clicked .menu {
+        display: block; }
+    @media only screen and (max-width: 768px) {
+      .header #mb-menu-button {
+        display: block; } }
+    .header #mb-menu-button .menu {
+      display: none;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      list-style: none;
+      min-width: 180px;
+      margin: 0;
+      padding: 0;
+      color: white;
+      background-color: #273759; }
+      .header #mb-menu-button .menu li {
+        padding: 0 20px;
+        line-height: 50px;
+        border-bottom: solid thin #445270; }
 
 @media only screen and (max-width: 768px) {
   .main .btn {
