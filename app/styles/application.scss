@@ -214,7 +214,6 @@ input, textarea {
     margin: 0;
     padding: 0;
     line-height: 90px;
-    color: #7d94b4;
     @include bp-small {
       display: none;
     }
@@ -223,6 +222,11 @@ input, textarea {
       float: left;
       padding: 0 15px;
       cursor: pointer;
+    }
+
+    a {
+      color: #7d94b4;
+      text-decoration: none;
     }
   }
 
@@ -241,6 +245,7 @@ input, textarea {
     margin-right: -20px;
     background: transparent url(../images/menu_icon1.png) center/40% no-repeat;
     cursor: pointer;
+    z-index: 10;
 
     &.clicked {
       background: #273759 url(../images/menu_icon2.png) center/40% no-repeat;
@@ -263,13 +268,18 @@ input, textarea {
       min-width: 180px;
       margin: 0;
       padding: 0;
-      color: white;
+      color: #ffffff;
       background-color: #273759;
 
       li {
         padding: 0 20px;
         line-height: 50px;
         border-bottom: solid thin #445270;
+      }
+
+      a {
+        color: #ffffff;
+        text-decoration: none;
       }
     }
   }

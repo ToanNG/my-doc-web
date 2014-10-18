@@ -208,8 +208,7 @@ input, textarea {
     list-style: none;
     margin: 0;
     padding: 0;
-    line-height: 90px;
-    color: #7d94b4; }
+    line-height: 90px; }
     @media only screen and (max-width: 768px) {
       .header .nav-bar {
         display: none; } }
@@ -217,6 +216,9 @@ input, textarea {
       float: left;
       padding: 0 15px;
       cursor: pointer; }
+    .header .nav-bar a {
+      color: #7d94b4;
+      text-decoration: none; }
   .header .login-button {
     margin-top: 27px; }
     @media only screen and (max-width: 768px) {
@@ -229,7 +231,8 @@ input, textarea {
     height: 60px;
     margin-right: -20px;
     background: transparent url(../images/menu_icon1.png) center/40% no-repeat;
-    cursor: pointer; }
+    cursor: pointer;
+    z-index: 10; }
     .header #mb-menu-button.clicked {
       background: #273759 url(../images/menu_icon2.png) center/40% no-repeat; }
       .header #mb-menu-button.clicked .menu {
@@ -246,12 +249,15 @@ input, textarea {
       min-width: 180px;
       margin: 0;
       padding: 0;
-      color: white;
+      color: #ffffff;
       background-color: #273759; }
       .header #mb-menu-button .menu li {
         padding: 0 20px;
         line-height: 50px;
         border-bottom: solid thin #445270; }
+      .header #mb-menu-button .menu a {
+        color: #ffffff;
+        text-decoration: none; }
 
 @media only screen and (max-width: 768px) {
   .main .btn {
