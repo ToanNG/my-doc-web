@@ -9,6 +9,7 @@
     window.brunch['auto-reload'] = {enabled: true};
   </script>
   <!-- <script src="/javascripts/vendor.js"></script> -->
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
   <script src="/javascripts/app.js"></script>
   <script>require('app')</script>
 </head>
@@ -17,38 +18,47 @@
     <div class="container">
       <div class="float-left logo"></div>
 
-      <button class="float-right btn rounded login-button">Login</button>
+      <button class="float-right btn rounded login-button">Sign in</button>
       <ul class="float-right nav-bar">
         <li>Patients</li>
         <li>Professional</li>
         <li>Employers</li>
         <li>Partners</li>
       </ul>
+
+      <div id="mb-menu-button" class="float-right">
+        <ul class="menu">
+          <li>Patients</li>
+          <li>Professional</li>
+          <li>Employers</li>
+          <li>Partners</li>
+          <li>Login</li>
+        </ul>
+      </div>
     </div>
   </div>
 
   <div class="main">
-    <div class="home-section-1 bg-color">
+    <div class="home-section-1">
       <div class="container">
         <div class="row">
-          <div class="col-1">
-            <h1>
-              The healthcare communication service <br>
-              that just works
-            </h1>
-            <h3>
-              Better communications benefits everyone, <br>
-              engaging patients and streamlining care delivery.
-            </h3>
+          <div class="float-right col-2 center">
+            <h1>The Healthcare Communication <br> Service That Just Works</h1>
+            <p>Streamlined communication <br> that benefits everyone</p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
             <p>
-              <button class="btn btn-large btn-color rounded">
-                Get Started
-              </button>
-            </p>
-            <p>
-              &darr; Scroll to learn more
+              <button class="btn rounded">Get Started</button>
             </p>
           </div>
+          <div class="clear"></div>
+        </div>
+
+        <div class="bg-img">
+          <img src="../images/p1_s1_a.png" class="full-height">
         </div>
       </div>
     </div>
@@ -56,20 +66,20 @@
     <div class="home-section-2">
       <div class="container">
         <div class="row">
-          <div class="float-right col-2">
-            <img src="../images/p1_section1.png">
-          </div>
-          <div class="float-right col-2">
+          <div class="col-1">
             <h1>PATIENTS</h1>
-            <h3>Manage your health anytime, anywhere</h3>
+            <h3>Manage your health, anytime, anywhere</h3>
             <ul class="list">
-              <li>Communication with your care team</li>
+              <li>Communicate with your care team</li>
               <li>Build your secure portable health diary</li>
               <li>Get help from our medical concierge</li>
             </ul>
-            <button class="btn rounded">Learn more</button>
+            <button class="btn rounded">Learn More</button>
           </div>
-          <div class="clear"></div>
+        </div>
+
+        <div class="bg-img">
+          <img src="../images/p1_s2_b.png" class="full-height">
         </div>
       </div>
     </div>
@@ -78,9 +88,6 @@
       <div class="container">
         <div class="row">
           <div class="float-right col-2">
-            <img src="../images/p1_section2.png">
-          </div>
-          <div class="float-right col-2">
             <h1>PROFESSIONALS</h1>
             <h3>Grow your practice</h3>
             <ul class="list">
@@ -88,9 +95,13 @@
               <li>Engage and retain your existing patients</li>
               <li>Improve the quality of service & care</li>
             </ul>
-            <button class="btn rounded">Learn more</button>
+            <button class="btn rounded">Learn More</button>
           </div>
           <div class="clear"></div>
+        </div>
+
+        <div class="bg-img">
+          <img src="../images/p1_s3_b.png" class="full-height">
         </div>
       </div>
     </div>
@@ -98,49 +109,42 @@
     <div class="home-section-4">
       <div class="container">
         <div class="row">
-          <div class="float-right col-2">
-            <img src="../images/p1_section3.png">
-          </div>
-          <div class="float-right col-2">
+          <div class="col-1">
             <h1>EMPLOYERS</h1>
-            <h3>Cosy saving health benefits everyone loves</h3>
+            <h3>Cost saving health benefits everyone loves</h3>
             <ul class="list">
               <li>Reduce costs with MyDoc consultations</li>
               <li>Highly valued innovative benefits</li>
               <li>Say hello to actionable data</li>
             </ul>
-            <button class="btn rounded">Learn more</button>
+            <button class="btn rounded">Learn More</button>
           </div>
-          <div class="clear"></div>
+        </div>
+
+        <div class="bg-img">
+          <img src="../images/p1_s4_b.png" class="full-height">
         </div>
       </div>
     </div>
 
-    <div class="home-section-5 bg-color">
+    <div class="home-section-5">
       <div class="container">
         <div class="row">
-          <div class="col-1">
+          <div class="float-right col-2">
             <h1>PARTNERS</h1>
-            <h3>We partner with insurers, hospitals, retailers, developers and other health entities looking to grow and streamline their business by taking advantage of our validated technology and services.</h3>
-
-            <div class="row">
-              <div class="col-4">
-                <img src="../images/logo1.jpg">
-              </div>
-              <div class="col-4">
-                <img src="../images/logo2.jpg">
-              </div>
-              <div class="col-4">
-                <img src="../images/logo3.jpg">
-              </div>
-              <div class="col-4">
-                <img src="../images/logo4.jpg">
-              </div>
-              <div class="clear"></div>
-            </div>
-            
-            <button class="btn rounded">Learn more</button>
+            <h3>Grow with us</h3>
+            <ul class="list">
+              <li>Enterprise grade API</li>
+              <li>Engage and retain your existing patients</li>
+              <li>Improve the quality of service & care</li>
+            </ul>
+            <button class="btn rounded">Learn More</button>
           </div>
+          <div class="clear"></div>
+        </div>
+
+        <div class="bg-img">
+          <img src="../images/p1_s5_b.png" class="full-height">
         </div>
       </div>
     </div>
@@ -150,15 +154,13 @@
     <div class="container">
       <div class="row">
         <div class="col-3 center">
-          <h2>ABOUT US</h2>
+          <h3>ABOUT US</h3>
           <ul class="list no-style">
-            <li>Our Story</li>
             <li>Contact Us</li>
-            <li>Join Us</li>
           </ul>
         </div>
         <div class="col-3 center">
-          <h2>MYDOC</h2>
+          <h3>MYDOC</h3>
           <ul class="list no-style">
             <li>Patients</li>
             <li>Professionals</li>
@@ -167,7 +169,7 @@
           </ul>
         </div>
         <div class="col-3 center">
-          <h2>LEGAL</h2>
+          <h3>LEGAL</h3>
           <ul class="list no-style">
             <li>Terms & Conditions</li>
             <li>Privacy Policy</li>

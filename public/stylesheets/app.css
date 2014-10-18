@@ -182,6 +182,9 @@ input, textarea {
 .full-width {
   width: 100%; }
 
+.full-height {
+  height: 100%; }
+
 .center {
   text-align: center; }
 
@@ -257,44 +260,133 @@ input, textarea {
   background-color: #575757; }
 
 .home-section-1 {
-  min-height: 610px;
-  text-align: center;
-  background: transparent url(../images/hero.png) no-repeat;
-  background-position: center bottom -130px;
-  background-size: auto; }
-  @media only screen and (max-width: 768px) {
-    .home-section-1 {
-      min-height: 510px;
-      background-position: center bottom;
-      background-size: 100% auto; } }
+  background: transparent url(../images/p1_s1_b.png) top/cover no-repeat; }
+  .home-section-1 .container {
+    position: relative;
+    max-width: 768px;
+    height: 360;
+    padding: 0.1px 0;
+    background-image: url(../images/p1_s1_c.png);
+    background-position: center bottom;
+    background-size: auto;
+    background-repeat: no-repeat; }
+    .home-section-1 .container .bg-img {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 90%; }
+    .home-section-1 .container .col-2 {
+      padding: 0; }
+    .home-section-1 .container h1 {
+      font-size: 28px; }
 
-.home-section-2 .container {
-  background: transparent url(../images/p1_section1.png) no-repeat; }
+.home-section-2 {
+  overflow: hidden;
+  background-color: #f3f5f2;
+  -webkit-box-shadow: inset 0 25px 100px #b9bcc4;
+  -moz-box-shadow: inset 0 25px 100px #b9bcc4;
+  -ms-box-shadow: inset 0 25px 100px #b9bcc4;
+  -o-box-shadow: inset 0 25px 100px #b9bcc4;
+  box-shadow: inset 0 25px 100px #b9bcc4; }
+  .home-section-2 .container {
+    position: relative;
+    max-width: 768px;
+    height: 332px;
+    padding: 0.1px 0;
+    background-image: url(../images/p1_s2_a.png);
+    background-position: center bottom;
+    background-size: auto;
+    background-repeat: no-repeat; }
+    .home-section-2 .container .bg-img {
+      position: absolute;
+      right: -35%;
+      bottom: 0;
+      height: 90%; }
+    .home-section-2 .container .col-1 {
+      position: relative;
+      top: 20px;
+      left: 90px; }
 
-.home-section-3 .container {
-  background: transparent url(../images/p1_section2.png) no-repeat; }
+.home-section-3 {
+  overflow: hidden;
+  background-color: #fefefe;
+  -webkit-box-shadow: inset 0 25px 100px #b9bcc4;
+  -moz-box-shadow: inset 0 25px 100px #b9bcc4;
+  -ms-box-shadow: inset 0 25px 100px #b9bcc4;
+  -o-box-shadow: inset 0 25px 100px #b9bcc4;
+  box-shadow: inset 0 25px 100px #b9bcc4; }
+  .home-section-3 .container {
+    position: relative;
+    max-width: 768px;
+    height: 332px;
+    padding: 0.1px 0;
+    background-image: url(../images/p1_s3_a.png);
+    background-position: center bottom;
+    background-size: auto;
+    background-repeat: no-repeat; }
+    .home-section-3 .container .bg-img {
+      position: absolute;
+      left: -30%;
+      bottom: 0;
+      height: 90%; }
+    .home-section-3 .container .col-2 {
+      position: relative;
+      top: 20px;
+      left: 120px; }
 
-.home-section-4 .container {
-  background: transparent url(../images/p1_section3.png) no-repeat; }
+.home-section-4 {
+  overflow: hidden;
+  background-color: #f3f5f2;
+  -webkit-box-shadow: inset 0 25px 100px #b9bcc4;
+  -moz-box-shadow: inset 0 25px 100px #b9bcc4;
+  -ms-box-shadow: inset 0 25px 100px #b9bcc4;
+  -o-box-shadow: inset 0 25px 100px #b9bcc4;
+  box-shadow: inset 0 25px 100px #b9bcc4; }
+  .home-section-4 .container {
+    position: relative;
+    max-width: 768px;
+    height: 332px;
+    padding: 0.1px 0;
+    background-image: url(../images/p1_s4_a.png);
+    background-position: center bottom;
+    background-size: auto;
+    background-repeat: no-repeat; }
+    .home-section-4 .container .bg-img {
+      position: absolute;
+      right: -30%;
+      bottom: 0;
+      height: 90%; }
+    .home-section-4 .container .col-1 {
+      position: relative;
+      top: 20px;
+      left: 90px; }
 
-.home-section-2, .home-section-3, .home-section-4 {
-  border-bottom: solid thin #c3cbd6; }
-  .home-section-2 .container, .home-section-3 .container, .home-section-4 .container {
-    background-position: right bottom;
-    background-size: 50% auto; }
-    @media only screen and (max-width: 768px) {
-      .home-section-2 .container, .home-section-3 .container, .home-section-4 .container {
-        background: none; } }
-    .home-section-2 .container .col-2:first-child, .home-section-3 .container .col-2:first-child, .home-section-4 .container .col-2:first-child {
-      opacity: 0; }
-      @media only screen and (max-width: 768px) {
-        .home-section-2 .container .col-2:first-child, .home-section-3 .container .col-2:first-child, .home-section-4 .container .col-2:first-child {
-          opacity: 1; } }
-    @media only screen and (max-width: 768px) {
-      .home-section-2 .container img, .home-section-3 .container img, .home-section-4 .container img {
-        height: 200px;
-        width: auto;
-        margin: 0 auto; } }
+.home-section-5 {
+  overflow: hidden;
+  background-color: #f8f9f7;
+  -webkit-box-shadow: inset 0 15px 50px #b9bcc4;
+  -moz-box-shadow: inset 0 15px 50px #b9bcc4;
+  -ms-box-shadow: inset 0 15px 50px #b9bcc4;
+  -o-box-shadow: inset 0 15px 50px #b9bcc4;
+  box-shadow: inset 0 15px 50px #b9bcc4; }
+  .home-section-5 .container {
+    position: relative;
+    max-width: 768px;
+    height: 332px;
+    padding: 0.1px 0;
+    background-image: url(../images/p1_s5_a.png);
+    background-position: center bottom;
+    background-size: auto;
+    background-repeat: no-repeat; }
+    .home-section-5 .container .bg-img {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 80%; }
+    .home-section-5 .container .col-2 {
+      position: relative;
+      top: 20px;
+      left: 120px; }
 
 @media only screen and (max-width: 768px) {
   .patients-section-1 h1 {
