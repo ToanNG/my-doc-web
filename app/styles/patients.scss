@@ -1,8 +1,16 @@
 .patients-section-1 {
+  h1 {
+    @include bp-small {
+      margin-top: 0;
+    }
+  }
+
   .app-store-button, .google-play-button {
     display: inline-block;
     width: 155px;
     height: 54px;
+    margin: 1em 0;
+    cursor: pointer;
     @include bp-small {
       display: block;
       margin: 5px auto;
@@ -43,35 +51,8 @@
 }
 
 .patients-section-4 {
-  .col-2 {
-    &:nth-of-type(1) {
-      .icon {
-        background: #f3f5f2 url('../images/icon1.png') center no-repeat;
-      }
-    }
-    &:nth-of-type(2) {
-      .icon {
-        background: #f3f5f2 url('../images/icon2.png') center no-repeat;
-      }
-    }
-    &:nth-of-type(3) {
-      .icon {
-        background: #f3f5f2 url('../images/icon3.png') center no-repeat;
-      }
-    }
-    &:nth-of-type(4) {
-      .icon {
-        background: #f3f5f2 url('../images/icon4.png') center no-repeat;
-      }
-    }
-  }
-
   .icon {
     float: left;
-    width: 120px;
-    height: 120px;
-    background-color: #f3f5f2;
-    @include border-radius(50%);
     @include bp-small {
       float: none;
       margin: 0 auto 20px;
@@ -79,10 +60,11 @@
   }
 
   .content {
-    margin-left: 120px;
-    padding: 0 20px;
+    margin-left: 95px;
+    padding: 0 20px 0 40px;
     @include bp-small {
       margin-left: 0;
+      padding: 0;
     }
 
     h3 { margin-top: 0; }

@@ -258,68 +258,8 @@ input, textarea {
         width: auto;
         margin: 0 auto; } }
 
-.patients-section-1 .app-store-button, .patients-section-1 .google-play-button {
-  display: inline-block;
-  width: 155px;
-  height: 54px; }
-  @media only screen and (max-width: 768px) {
-    .patients-section-1 .app-store-button, .patients-section-1 .google-play-button {
-      display: block;
-      margin: 5px auto; } }
-.patients-section-1 .app-store-button {
-  background: transparent url(../images/appstore.png) center no-repeat; }
-.patients-section-1 .google-play-button {
-  background: transparent url(../images/googleplay.png) center no-repeat; }
-
-.patients-section-2 .col-2:nth-of-type(1) {
-  width: 60%; }
-  @media only screen and (max-width: 768px) {
-    .patients-section-2 .col-2:nth-of-type(1) {
-      width: 100%; } }
-.patients-section-2 .col-2:nth-of-type(2) {
-  width: 40%;
-  padding-top: 50px; }
-  @media only screen and (max-width: 768px) {
-    .patients-section-2 .col-2:nth-of-type(2) {
-      width: 100%;
-      padding-top: 10px; } }
-
-.patients-section-3 .col-2:nth-of-type(2) {
-  padding-top: 50px; }
-  @media only screen and (max-width: 768px) {
-    .patients-section-3 .col-2:nth-of-type(2) {
-      padding-top: 10px; } }
-
-.patients-section-4 .col-2:nth-of-type(1) .icon {
-  background: #f3f5f2 url('../images/icon1.png') center no-repeat; }
-.patients-section-4 .col-2:nth-of-type(2) .icon {
-  background: #f3f5f2 url('../images/icon2.png') center no-repeat; }
-.patients-section-4 .col-2:nth-of-type(3) .icon {
-  background: #f3f5f2 url('../images/icon3.png') center no-repeat; }
-.patients-section-4 .col-2:nth-of-type(4) .icon {
-  background: #f3f5f2 url('../images/icon4.png') center no-repeat; }
-.patients-section-4 .icon {
-  float: left;
-  width: 120px;
-  height: 120px;
-  background-color: #f3f5f2;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%; }
-  @media only screen and (max-width: 768px) {
-    .patients-section-4 .icon {
-      float: none;
-      margin: 0 auto 20px; } }
-.patients-section-4 .content {
-  margin-left: 120px;
-  padding: 0 20px; }
-  @media only screen and (max-width: 768px) {
-    .patients-section-4 .content {
-      margin-left: 0; } }
-  .patients-section-4 .content h3 {
-    margin-top: 0; }
+a {
+  color: red; }
 
 .professionals-section-2 .col-3:nth-of-type(1) .icon {
   background: #f3f5f2 url('../images/icon6.png') center no-repeat; }
@@ -384,44 +324,6 @@ input, textarea {
   left: 0;
   right: 0;
   bottom: 0; }
-
-.partners-section-2 img {
-  display: inline-block;
-  width: auto; }
-
-.employers-section-2 .col-3:nth-of-type(1) .icon {
-  background: #f3f5f2 url('../images/icon10.png') center no-repeat; }
-.employers-section-2 .col-3:nth-of-type(2) .icon {
-  background: #f3f5f2 url('../images/icon8.png') center no-repeat; }
-.employers-section-2 .col-3:nth-of-type(3) .icon {
-  background: #f3f5f2 url('../images/icon2.png') center no-repeat; }
-.employers-section-2 .icon {
-  width: 120px;
-  height: 120px;
-  margin: 0 auto;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%; }
-
-.demo-section-1 {
-  min-height: 760px;
-  background: transparent url(../images/p6.png) no-repeat;
-  background-position: center bottom;
-  background-size: 700px auto; }
-  @media only screen and (max-width: 768px) {
-    .demo-section-1 {
-      min-height: 710px;
-      background-size: 100% auto; } }
-  .demo-section-1 .btn, .demo-section-1 .btn-large {
-    min-width: 100px; }
-
-.demo-section-2 h2 {
-  margin-bottom: 0; }
-.demo-section-2 p:nth-of-type(1) {
-  margin-top: 0;
-  margin-bottom: 1.245em; }
 
 
 /*# sourceMappingURL=app.css.map*/

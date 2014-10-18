@@ -1,0 +1,25 @@
+.demo-section-1 {
+  min-height: 760px;
+  background: transparent url(../images/p6.png) no-repeat;
+  background-position: center bottom;
+  background-size: 700px auto;
+  @include bp-small {
+    min-height: 710px;
+    background-size: 100% auto;
+  }
+
+  .btn {
+    min-width: 100px;
+  }
+}
+
+.demo-section-2 {
+  h2 {
+    margin-bottom: 0;
+  }
+
+  p:nth-of-type(1) {
+    margin-top: 0;
+    margin-bottom: 1.245em;
+  }
+}
