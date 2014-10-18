@@ -365,5 +365,11 @@ input, textarea {
   right: 20px;
   bottom: 0; }
 
+.employers-section-5 .btn-large {
+  width: 300px; }
+  @media only screen and (max-width: 768px) {
+    .employers-section-5 .btn-large {
+      width: 100%; } }
+
 
 /*# sourceMappingURL=app.css.map*/
