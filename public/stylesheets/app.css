@@ -233,13 +233,13 @@ input, textarea {
     background: transparent url(../images/menu_icon1.png) center/40% no-repeat;
     cursor: pointer;
     z-index: 10; }
+    @media only screen and (max-width: 768px) {
+      .header #mb-menu-button {
+        display: block; } }
     .header #mb-menu-button.clicked {
       background: #273759 url(../images/menu_icon2.png) center/40% no-repeat; }
       .header #mb-menu-button.clicked .menu {
         display: block; }
-    @media only screen and (max-width: 768px) {
-      .header #mb-menu-button {
-        display: block; } }
     .header #mb-menu-button .menu {
       display: none;
       position: absolute;
@@ -268,9 +268,12 @@ input, textarea {
   color: #ffffff;
   background-color: #575757; }
 
-.home-section-1 {
+@media only screen and (max-width: 768px) {
+  .home-desktop {
+    display: none; } }
+.home-desktop .home-section-1 {
   background: transparent url(../images/p1_s1_b.png) top/cover no-repeat; }
-  .home-section-1 .container {
+  .home-desktop .home-section-1 .container {
     position: relative;
     max-width: 768px;
     height: 360;
@@ -279,25 +282,24 @@ input, textarea {
     background-position: center bottom;
     background-size: auto;
     background-repeat: no-repeat; }
-    .home-section-1 .container .bg-img {
+    .home-desktop .home-section-1 .container .bg-img {
       position: absolute;
       left: 0;
       bottom: 0;
       height: 90%; }
-    .home-section-1 .container .col-2 {
+    .home-desktop .home-section-1 .container .col-2 {
       padding: 0; }
-    .home-section-1 .container h1 {
+    .home-desktop .home-section-1 .container h1 {
       font-size: 28px; }
-
-.home-section-2 {
+.home-desktop .home-section-2 {
   overflow: hidden;
-  background-color: #f3f5f2;
-  -webkit-box-shadow: inset 0 25px 100px #b9bcc4;
-  -moz-box-shadow: inset 0 25px 100px #b9bcc4;
-  -ms-box-shadow: inset 0 25px 100px #b9bcc4;
-  -o-box-shadow: inset 0 25px 100px #b9bcc4;
-  box-shadow: inset 0 25px 100px #b9bcc4; }
-  .home-section-2 .container {
+  background-color: #f8f9f7;
+  -webkit-box-shadow: inset 0 15px 100px #b9bcc4;
+  -moz-box-shadow: inset 0 15px 100px #b9bcc4;
+  -ms-box-shadow: inset 0 15px 100px #b9bcc4;
+  -o-box-shadow: inset 0 15px 100px #b9bcc4;
+  box-shadow: inset 0 15px 100px #b9bcc4; }
+  .home-desktop .home-section-2 .container {
     position: relative;
     max-width: 768px;
     height: 332px;
@@ -306,25 +308,24 @@ input, textarea {
     background-position: center bottom;
     background-size: auto;
     background-repeat: no-repeat; }
-    .home-section-2 .container .bg-img {
+    .home-desktop .home-section-2 .container .bg-img {
       position: absolute;
       right: -35%;
       bottom: 0;
       height: 90%; }
-    .home-section-2 .container .col-1 {
+    .home-desktop .home-section-2 .container .col-1 {
       position: relative;
       top: 20px;
       left: 90px; }
-
-.home-section-3 {
+.home-desktop .home-section-3 {
   overflow: hidden;
-  background-color: #fefefe;
-  -webkit-box-shadow: inset 0 25px 100px #b9bcc4;
-  -moz-box-shadow: inset 0 25px 100px #b9bcc4;
-  -ms-box-shadow: inset 0 25px 100px #b9bcc4;
-  -o-box-shadow: inset 0 25px 100px #b9bcc4;
-  box-shadow: inset 0 25px 100px #b9bcc4; }
-  .home-section-3 .container {
+  background-color: #f8f9f7;
+  -webkit-box-shadow: inset 0 15px 100px #b9bcc4;
+  -moz-box-shadow: inset 0 15px 100px #b9bcc4;
+  -ms-box-shadow: inset 0 15px 100px #b9bcc4;
+  -o-box-shadow: inset 0 15px 100px #b9bcc4;
+  box-shadow: inset 0 15px 100px #b9bcc4; }
+  .home-desktop .home-section-3 .container {
     position: relative;
     max-width: 768px;
     height: 332px;
@@ -333,25 +334,24 @@ input, textarea {
     background-position: center bottom;
     background-size: auto;
     background-repeat: no-repeat; }
-    .home-section-3 .container .bg-img {
+    .home-desktop .home-section-3 .container .bg-img {
       position: absolute;
       left: -30%;
       bottom: 0;
       height: 90%; }
-    .home-section-3 .container .col-2 {
+    .home-desktop .home-section-3 .container .col-2 {
       position: relative;
       top: 20px;
       left: 120px; }
-
-.home-section-4 {
+.home-desktop .home-section-4 {
   overflow: hidden;
-  background-color: #f3f5f2;
-  -webkit-box-shadow: inset 0 25px 100px #b9bcc4;
-  -moz-box-shadow: inset 0 25px 100px #b9bcc4;
-  -ms-box-shadow: inset 0 25px 100px #b9bcc4;
-  -o-box-shadow: inset 0 25px 100px #b9bcc4;
-  box-shadow: inset 0 25px 100px #b9bcc4; }
-  .home-section-4 .container {
+  background-color: #f8f9f7;
+  -webkit-box-shadow: inset 0 15px 100px #b9bcc4;
+  -moz-box-shadow: inset 0 15px 100px #b9bcc4;
+  -ms-box-shadow: inset 0 15px 100px #b9bcc4;
+  -o-box-shadow: inset 0 15px 100px #b9bcc4;
+  box-shadow: inset 0 15px 100px #b9bcc4; }
+  .home-desktop .home-section-4 .container {
     position: relative;
     max-width: 768px;
     height: 332px;
@@ -360,25 +360,24 @@ input, textarea {
     background-position: center bottom;
     background-size: auto;
     background-repeat: no-repeat; }
-    .home-section-4 .container .bg-img {
+    .home-desktop .home-section-4 .container .bg-img {
       position: absolute;
       right: -30%;
       bottom: 0;
       height: 90%; }
-    .home-section-4 .container .col-1 {
+    .home-desktop .home-section-4 .container .col-1 {
       position: relative;
       top: 20px;
       left: 90px; }
-
-.home-section-5 {
+.home-desktop .home-section-5 {
   overflow: hidden;
   background-color: #f8f9f7;
-  -webkit-box-shadow: inset 0 15px 50px #b9bcc4;
-  -moz-box-shadow: inset 0 15px 50px #b9bcc4;
-  -ms-box-shadow: inset 0 15px 50px #b9bcc4;
-  -o-box-shadow: inset 0 15px 50px #b9bcc4;
-  box-shadow: inset 0 15px 50px #b9bcc4; }
-  .home-section-5 .container {
+  -webkit-box-shadow: inset 0 15px 100px #b9bcc4;
+  -moz-box-shadow: inset 0 15px 100px #b9bcc4;
+  -ms-box-shadow: inset 0 15px 100px #b9bcc4;
+  -o-box-shadow: inset 0 15px 100px #b9bcc4;
+  box-shadow: inset 0 15px 100px #b9bcc4; }
+  .home-desktop .home-section-5 .container {
     position: relative;
     max-width: 768px;
     height: 332px;
@@ -387,15 +386,87 @@ input, textarea {
     background-position: center bottom;
     background-size: auto;
     background-repeat: no-repeat; }
-    .home-section-5 .container .bg-img {
+    .home-desktop .home-section-5 .container .bg-img {
       position: absolute;
       left: 0;
       bottom: 0;
       height: 80%; }
-    .home-section-5 .container .col-2 {
+    .home-desktop .home-section-5 .container .col-2 {
       position: relative;
       top: 20px;
       left: 120px; }
+
+.home-mb {
+  display: none; }
+  @media only screen and (max-width: 768px) {
+    .home-mb {
+      display: block; } }
+  .home-mb .btn, .home-mb .btn-large {
+    display: inline-block;
+    margin: 0; }
+  .home-mb .bg-img {
+    max-width: 280px;
+    margin: 0 auto; }
+  .home-mb .home-section-1 {
+    background: transparent url(../images/p1_s1_b.png) top/cover no-repeat; }
+  .home-mb .home-section-2 {
+    background-color: #f8f9f7; }
+    .home-mb .home-section-2 .container {
+      background: url(../images/p1_mb_s2_a.png) center bottom no-repeat; }
+    .home-mb .home-section-2 .col-1 {
+      padding-bottom: 0; }
+  .home-mb .home-section-3 {
+    background-color: #f8f9f7;
+    -webkit-box-shadow: inset 0 15px 100px #b9bcc4;
+    -moz-box-shadow: inset 0 15px 100px #b9bcc4;
+    -ms-box-shadow: inset 0 15px 100px #b9bcc4;
+    -o-box-shadow: inset 0 15px 100px #b9bcc4;
+    box-shadow: inset 0 15px 100px #b9bcc4; }
+    .home-mb .home-section-3 .container {
+      background: url(../images/p1_mb_s3_a.png) center top no-repeat; }
+    .home-mb .home-section-3 .col-1 {
+      max-width: 320px;
+      margin: -20px auto;
+      padding-left: 30px; }
+  .home-mb .home-section-4 {
+    background-color: #f8f9f7;
+    -webkit-box-shadow: inset 0 15px 100px #b9bcc4;
+    -moz-box-shadow: inset 0 15px 100px #b9bcc4;
+    -ms-box-shadow: inset 0 15px 100px #b9bcc4;
+    -o-box-shadow: inset 0 15px 100px #b9bcc4;
+    box-shadow: inset 0 15px 100px #b9bcc4; }
+    .home-mb .home-section-4 .container {
+      background: url(../images/p1_mb_s4_a.png) center top no-repeat; }
+    .home-mb .home-section-4 .col-1 {
+      max-width: 320px;
+      margin: -20px auto;
+      padding-left: 30px; }
+  .home-mb .home-section-5 {
+    background-color: #f8f9f7;
+    -webkit-box-shadow: inset 0 15px 100px #b9bcc4;
+    -moz-box-shadow: inset 0 15px 100px #b9bcc4;
+    -ms-box-shadow: inset 0 15px 100px #b9bcc4;
+    -o-box-shadow: inset 0 15px 100px #b9bcc4;
+    box-shadow: inset 0 15px 100px #b9bcc4; }
+    .home-mb .home-section-5 .container {
+      background: url(../images/p1_mb_s5_a.png) center top no-repeat; }
+    .home-mb .home-section-5 .col-1 {
+      max-width: 320px;
+      margin: -20px auto;
+      padding-left: 30px; }
+  .home-mb .home-section-6 {
+    background-color: #f8f9f7;
+    -webkit-box-shadow: inset 0 15px 100px #b9bcc4;
+    -moz-box-shadow: inset 0 15px 100px #b9bcc4;
+    -ms-box-shadow: inset 0 15px 100px #b9bcc4;
+    -o-box-shadow: inset 0 15px 100px #b9bcc4;
+    box-shadow: inset 0 15px 100px #b9bcc4; }
+    .home-mb .home-section-6 .container {
+      background: url(../images/p1_mb_s6_a.png) center top no-repeat; }
+    .home-mb .home-section-6 .col-1 {
+      max-width: 320px;
+      margin: -20px auto;
+      padding-left: 30px; }
 
 @media only screen and (max-width: 768px) {
   .patients-section-1 h1 {

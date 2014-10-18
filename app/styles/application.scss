@@ -246,6 +246,9 @@ input, textarea {
     background: transparent url(../images/menu_icon1.png) center/40% no-repeat;
     cursor: pointer;
     z-index: 10;
+    @include bp-small {
+      display: block;
+    }
 
     &.clicked {
       background: #273759 url(../images/menu_icon2.png) center/40% no-repeat;
@@ -253,10 +256,6 @@ input, textarea {
       .menu {
         display: block;
       }
-    }
-
-    @include bp-small {
-      display: block;
     }
 
     .menu {
