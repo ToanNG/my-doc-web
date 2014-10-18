@@ -1,11 +1,8 @@
 .demo-section-1 {
-  min-height: 760px;
-  background: transparent url(../images/p6.png) no-repeat;
-  background-position: center bottom;
-  background-size: 700px auto;
-  @include bp-small {
-    min-height: 710px;
-    background-size: 100% auto;
+  h1 {
+    @include bp-small {
+      margin-top: 0;
+    }
   }
 
   .btn {
