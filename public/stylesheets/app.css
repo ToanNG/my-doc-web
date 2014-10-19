@@ -161,8 +161,7 @@ input, textarea {
     list-style: none;
     padding-left: 0; }
   .list li {
-    padding: 0.25em 0;
-    line-height: 1.5em; }
+    padding: 0.25em 0; }
 
 .table {
   display: table; }
@@ -389,7 +388,7 @@ input, textarea {
     background-repeat: no-repeat; }
     .home-desktop .home-section-5 .container .bg-img {
       position: absolute;
-      left: 0;
+      left: -25%;
       bottom: 0;
       height: 80%; }
     .home-desktop .home-section-5 .container .col-2 {
@@ -405,9 +404,14 @@ input, textarea {
   .home-mb .btn, .home-mb .btn-large {
     display: inline-block;
     margin: 0; }
+  .home-mb .list li {
+    line-height: 1.5em; }
   .home-mb .bg-img {
     max-width: 280px;
     margin: 0 auto; }
+  .home-mb h1 {
+    margin-top: 5px;
+    font-size: 28px; }
   .home-mb .home-section-1 {
     overflow: hidden;
     background: transparent url(../images/p1_s1_b.png) top/cover no-repeat; }
@@ -430,7 +434,7 @@ input, textarea {
       background: url(../images/p1_mb_s3_a.png) center top no-repeat; }
     .home-mb .home-section-3 .col-1 {
       max-width: 320px;
-      margin: -20px auto;
+      margin: 0 auto;
       padding-left: 70px; }
   .home-mb .home-section-4 {
     overflow: hidden;
@@ -444,7 +448,7 @@ input, textarea {
       background: url(../images/p1_mb_s4_a.png) center top no-repeat; }
     .home-mb .home-section-4 .col-1 {
       max-width: 320px;
-      margin: -20px auto;
+      margin: 0 auto;
       padding-left: 70px; }
   .home-mb .home-section-5 {
     overflow: hidden;
@@ -458,7 +462,7 @@ input, textarea {
       background: url(../images/p1_mb_s5_a.png) center top no-repeat; }
     .home-mb .home-section-5 .col-1 {
       max-width: 320px;
-      margin: -20px auto;
+      margin: 0 auto;
       padding-left: 70px; }
   .home-mb .home-section-6 {
     overflow: hidden;
@@ -472,7 +476,7 @@ input, textarea {
       background: url(../images/p1_mb_s6_a.png) center top no-repeat; }
     .home-mb .home-section-6 .col-1 {
       max-width: 320px;
-      margin: -20px auto;
+      margin: 0 auto;
       padding-left: 70px; }
 
 @media only screen and (max-width: 768px) {

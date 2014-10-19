@@ -138,7 +138,7 @@
 
       .bg-img {
         position: absolute;
-        left: 0;
+        left: -25%;
         bottom: 0;
         height: 80%;
       }
@@ -163,9 +163,18 @@
     margin: 0;
   }
 
+  .list li {
+    line-height: 1.5em;
+  }
+
   .bg-img {
     max-width: 280px;
     margin: 0 auto;
+  }
+
+  h1 {
+    margin-top: 5px;
+    font-size: 28px;
   }
 
   .home-section-1 {
@@ -197,7 +206,7 @@
 
     .col-1 {
       max-width: 320px;
-      margin: -20px auto;
+      margin: 0 auto;
       padding-left: 70px;
     }
   }
@@ -213,7 +222,7 @@
 
     .col-1 {
       max-width: 320px;
-      margin: -20px auto;
+      margin: 0 auto;
       padding-left: 70px;
     }
   }
@@ -229,7 +238,7 @@
 
     .col-1 {
       max-width: 320px;
-      margin: -20px auto;
+      margin: 0 auto;
       padding-left: 70px;
     }
   }
@@ -245,7 +254,7 @@
 
     .col-1 {
       max-width: 320px;
-      margin: -20px auto;
+      margin: 0 auto;
       padding-left: 70px;
     }
   }
