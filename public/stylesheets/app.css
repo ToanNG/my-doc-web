@@ -103,6 +103,7 @@ input, textarea {
           width: 100%; } }
 
 .btn, .btn-large {
+  outline: none;
   -webkit-appearance: none;
   height: 36px;
   margin: 0;
@@ -125,6 +126,12 @@ input, textarea {
     -ms-border-radius: 18px;
     -o-border-radius: 18px;
     border-radius: 18px; }
+  .btn:active, .btn-large:active {
+    -webkit-box-shadow: 0 0 20px #273759;
+    -moz-box-shadow: 0 0 20px #273759;
+    -ms-box-shadow: 0 0 20px #273759;
+    -o-box-shadow: 0 0 20px #273759;
+    box-shadow: 0 0 20px #273759; }
 
 .btn-large {
   height: 48px;
@@ -142,8 +149,20 @@ input, textarea {
   color: #ffffff;
   background-color: #50d869;
   border: none; }
+  .btn-color:active {
+    -webkit-box-shadow: 0 0 20px #50d869;
+    -moz-box-shadow: 0 0 20px #50d869;
+    -ms-box-shadow: 0 0 20px #50d869;
+    -o-box-shadow: 0 0 20px #50d869;
+    box-shadow: 0 0 20px #50d869; }
   .btn-color.blue {
     background-color: #7f93b6; }
+    .btn-color.blue:active {
+      -webkit-box-shadow: 0 0 20px #7f93b6;
+      -moz-box-shadow: 0 0 20px #7f93b6;
+      -ms-box-shadow: 0 0 20px #7f93b6;
+      -o-box-shadow: 0 0 20px #7f93b6;
+      box-shadow: 0 0 20px #7f93b6; }
 
 .form {
   max-width: 350px;
@@ -256,7 +275,7 @@ input, textarea {
         line-height: 50px;
         border-bottom: solid thin #445270; }
       .header #mb-menu-button .menu a {
-        color: #ffffff;
+        color: rgba(255, 255, 255, 0.6);
         text-decoration: none; }
 
 @media only screen and (max-width: 768px) {
