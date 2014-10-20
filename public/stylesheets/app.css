@@ -325,7 +325,7 @@ input, textarea {
     height: 332px;
     padding: 0.1px 0;
     background-image: url(../images/p1_s2_a.png);
-    background-position: center bottom;
+    background-position: center top;
     background-size: auto;
     background-repeat: no-repeat; }
     .home-desktop .home-section-2 .container .bg-img {
@@ -351,7 +351,7 @@ input, textarea {
     height: 332px;
     padding: 0.1px 0;
     background-image: url(../images/p1_s3_a.png);
-    background-position: center bottom;
+    background-position: center top;
     background-size: auto;
     background-repeat: no-repeat; }
     .home-desktop .home-section-3 .container .bg-img {
@@ -377,7 +377,7 @@ input, textarea {
     height: 332px;
     padding: 0.1px 0;
     background-image: url(../images/p1_s4_a.png);
-    background-position: center bottom;
+    background-position: center top;
     background-size: auto;
     background-repeat: no-repeat; }
     .home-desktop .home-section-4 .container .bg-img {
@@ -403,7 +403,7 @@ input, textarea {
     height: 332px;
     padding: 0.1px 0;
     background-image: url(../images/p1_s5_a.png);
-    background-position: center bottom;
+    background-position: center top;
     background-size: auto;
     background-repeat: no-repeat; }
     .home-desktop .home-section-5 .container .bg-img {
