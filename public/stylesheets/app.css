@@ -240,7 +240,8 @@ input, textarea {
       color: #7d94b4;
       text-decoration: none; }
   .header .login-button {
-    margin-top: 27px; }
+    margin-top: 27px;
+    margin-left: 15px; }
     @media only screen and (max-width: 768px) {
       .header .login-button {
         display: none; } }
@@ -276,8 +277,12 @@ input, textarea {
         line-height: 50px;
         border-bottom: solid thin #445270; }
       .header #mb-menu-button .menu a {
+        display: block;
         color: rgba(255, 255, 255, 0.6);
         text-decoration: none; }
+        .header #mb-menu-button .menu a:active {
+          color: #ffffff;
+          background-color: #1f2d47; }
 
 @media only screen and (max-width: 768px) {
   .main .btn {

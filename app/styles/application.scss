@@ -243,6 +243,7 @@ input, textarea {
 
   .login-button {
     margin-top: 27px;
+    margin-left: 15px;
     @include bp-small {
       display: none;
     }
@@ -288,8 +289,13 @@ input, textarea {
       }
 
       a {
+        display: block;
         color: rgba(#ffffff,.6);
         text-decoration: none;
+        &:active {
+          color: #ffffff;
+          background-color: darken(#273759,5);
+        }
       }
     }
   }
