@@ -422,8 +422,13 @@ input, textarea {
 // Footer // ------------------------------------------------------
 
 .footer {
-  color: #ffffff;
-  background-color: #575757;
+  color: #27375A;
+  background-color: #C4CBD8;
+
+  a {
+    color: #27375A;
+    text-decoration: none;
+  }
 }
 
 @import "home";

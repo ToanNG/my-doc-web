@@ -376,8 +376,11 @@ input, textarea {
     margin: 0 auto; } }
 
 .footer {
-  color: #ffffff;
-  background-color: #575757; }
+  color: #27375A;
+  background-color: #C4CBD8; }
+  .footer a {
+    color: #27375A;
+    text-decoration: none; }
 
 @media only screen and (max-width: 768px) {
   .home-desktop {
