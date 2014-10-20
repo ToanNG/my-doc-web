@@ -167,7 +167,7 @@ input, textarea {
 
 .form {
   max-width: 350px;
-  margin: 1em auto;
+  margin: 0 auto;
   padding: 10px; }
   .form .form-group {
     margin: 1em 0; }
@@ -658,9 +658,12 @@ input, textarea {
 .demo-section-1 .btn, .demo-section-1 .btn-large {
   min-width: 100px; }
 
-.demo-section-2 h2 {
+.demo-section-2 .btn, .demo-section-2 .btn-large {
+  min-width: 100px; }
+
+.demo-section-3 h2 {
   margin-bottom: 0; }
-.demo-section-2 p:nth-of-type(1) {
+.demo-section-3 p:nth-of-type(1) {
   margin-top: 0;
   margin-bottom: 1.245em; }
 
