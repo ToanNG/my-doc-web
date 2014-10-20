@@ -13,8 +13,14 @@ $(function(){
   });
 
   $('.login-button').click(function(e){
-    e.preventDefault();
+    // e.preventDefault();
     $('#dialog-overlay').show();
     $('body').addClass('opened-dialog');
+  });
+
+  $('.cancel-button').click(function(e){
+    // e.preventDefault();
+    $('#dialog-overlay').hide();
+    $('body').removeClass('opened-dialog');
   });
 });

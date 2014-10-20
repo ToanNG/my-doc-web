@@ -230,11 +230,14 @@ input, textarea {
 // Header // ------------------------------------------------------
 
 .header {
-  overflow: hidden;
   height: 90px;
   background-color: #f3f5f2;
   @include bp-small {
     height: 60px;
+  }
+
+  .container {
+    padding: 0 20px;
   }
 
   .logo {

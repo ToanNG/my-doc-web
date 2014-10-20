@@ -238,12 +238,13 @@ input, textarea {
   clear: both; }
 
 .header {
-  overflow: hidden;
   height: 90px;
   background-color: #f3f5f2; }
   @media only screen and (max-width: 768px) {
     .header {
       height: 60px; } }
+  .header .container {
+    padding: 0 20px; }
   .header .logo {
     height: 90px;
     width: 200px;
