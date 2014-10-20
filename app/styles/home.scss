@@ -176,7 +176,7 @@
   }
 
   .list li {
-    line-height: 1.5em;
+    line-height: 1.25em;
   }
 
   .bg-img {
@@ -221,6 +221,10 @@
       margin: 0 auto;
       padding-left: 70px;
     }
+
+    h1 { margin-bottom: 10px; }
+    h3, .list { margin: 10px 0; }
+    .full-width { width: 150%; }
   }
 
   .home-section-4 {
@@ -237,6 +241,10 @@
       margin: 0 auto;
       padding-left: 70px;
     }
+
+    h1 { margin-bottom: 10px; }
+    h3, .list { margin: 10px 0; }
+    .full-width { width: 150%; }
   }
 
   .home-section-5 {
@@ -253,6 +261,10 @@
       margin: 0 auto;
       padding-left: 70px;
     }
+
+    h1 { margin-bottom: 10px; }
+    h3, .list { margin: 10px 0; }
+    .full-width { width: 150%; }
   }
 
   .home-section-6 {
@@ -269,5 +281,9 @@
       margin: 0 auto;
       padding-left: 70px;
     }
+
+    h1 { margin-bottom: 10px; }
+    h3, .list { margin: 10px 0; }
+    .full-width { width: 150%; }
   }
 }
