@@ -538,7 +538,8 @@ input, textarea {
     line-height: 1.25em; }
   .home-mb .bg-img {
     max-width: 280px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding-left: 30px; }
   .home-mb h1 {
     margin-top: 5px;
     font-size: 28px; }
@@ -686,7 +687,7 @@ input, textarea {
   .patients-section-4 .content h3 {
     margin-top: 0; }
 
-.professionals-section-10 h1 {
+.professionals-section-10 .quote {
   margin: 0 1em; }
 .professionals-section-10 .open-quote {
   margin-bottom: 0;
