@@ -1,0 +1,417 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport">
+  <title>My Doc</title>
+  <link rel="stylesheet" href="/stylesheets/app.css">
+  <script>
+    window.brunch = window.brunch || {};
+    window.brunch['auto-reload'] = {enabled: true};
+  </script>
+  <!-- <script src="/javascripts/vendor.js"></script> -->
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="/javascripts/app.js"></script>
+  <script>require('app')</script>
+</head>
+<body>
+
+  <!-- LOGIN FORMS -->
+
+  <div id="patients-login-form" class="dialog-overlay">
+    <div class="dialog">
+      <div class="tab active">
+        <h3>Patients</h3>
+      </div>
+      <div class="tab doctors-login-link">
+        <h3>Professionals</h3>
+      </div>
+      <div class="clear"></div>
+
+      <form class="form">
+        <div class="form-group">
+          <label for"input-email">Email address</label>
+          <span class="float-right">Need an account? <a href="#" class="patients-signup-link">Sign up</a></span>
+          <br>
+          <input type="text" name="email" id="input-email" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+          <label for"input-password">Password</label> <br>
+          <input type="text" name="password" id="input-password" placeholder="Enter password">
+          <a href="#" class="forgot-password-link">Forgotten your password?</a>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="float-left btn btn-color blue rounded">Login</button>
+          <button type="button" class="float-left btn btn-color gray rounded cancel-button">Cancel</button>
+          <div class="clear"></div>
+        </div>
+        <div class="form-group">
+          <p>
+            By logging in you agree to MyDoc's <a href="#">Terms & Conditions</a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="doctors-login-form" class="dialog-overlay">
+    <div class="dialog">
+      <div class="tab patients-login-link">
+        <h3>Patients</h3>
+      </div>
+      <div class="tab active">
+        <h3>Professionals</h3>
+      </div>
+      <div class="clear"></div>
+
+      <form class="form">
+        <div class="form-group">
+          <label for"input-email">Email address</label>
+          <span class="float-right">Need an account? <a href="#" class="doctors-signup-link">Sign up</a></span>
+          <br>
+          <input type="text" name="email" id="input-email" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+          <label for"input-password">Password</label> <br>
+          <input type="text" name="password" id="input-password" placeholder="Enter password">
+          <a href="#" class="forgot-password-link">Forgotten your password?</a>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="float-left btn btn-color blue rounded">Login</button>
+          <button type="button" class="float-left btn btn-color gray rounded cancel-button">Cancel</button>
+          <div class="clear"></div>
+        </div>
+        <div class="form-group">
+          <p>
+            By logging in you agree to MyDoc's <a href="#">Terms & Conditions</a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- SIGNUP FORMS -->
+
+  <div id="patients-signup-form" class="dialog-overlay">
+    <div class="dialog">
+      <div class="close-button">X</div>
+      <h1 class="center">Registration Form</h1>
+
+      <form class="form">
+        <div class="form-group">
+          <input type="text" value="+65">
+          <span class="tip">(Don't worry, only used for verification)</span>
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Enter the code sent to your phone">
+          <span class="tip"><a href="#">Send code</a></span>
+        </div>
+
+        <div class="seperate-line"></div>
+
+        <div class="form-group">
+          <input type="text" value="+65 8389 9492">
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="First name">
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Last name">
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Email">
+          <span class="tip">(This will be your username for the login)</span>
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Password">
+          <span class="tip">(Password must be 8-12 alphanumeric characters)</span>
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Confirm password">
+        </div>
+        <div class="form-group">
+          <input type="checkbox" name="checkbox" id="tac" value="value">
+          <label for="tac">I accept the <a href="">Term & Conditions</a></label>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="float-left btn btn-color blue rounded">Register</button>
+          <div class="clear"></div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="doctors-signup-form" class="dialog-overlay">
+    <div class="dialog">
+      <div class="close-button">X</div>
+      <h1 class="center">Registration Form</h1>
+
+      <form class="form">
+        <div class="form-group">
+          <input type="text" value="+65">
+          <span class="tip">(Don't worry, only used for verification)</span>
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Enter the code sent to your phone">
+          <span class="tip"><a href="#">Send code</a></span>
+        </div>
+
+        <div class="seperate-line"></div>
+
+        <div class="form-group">
+          <input type="text" value="+65 8389 9492">
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="First name">
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Last name">
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Title">
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Enter your MCR number *">
+          <span class="tip">*It's optional. But it would be easier for us to verify you as a professional.</span>
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Email">
+          <span class="tip">(This will be your username for the login)</span>
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Password">
+          <span class="tip">(Password must be 8-12 alphanumeric characters)</span>
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Confirm password">
+        </div>
+        <div class="form-group">
+          <input type="checkbox" name="checkbox" id="tac" value="value">
+          <label for="tac">I accept the <a href="">Term & Conditions</a></label>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="float-left btn btn-color blue rounded">Register</button>
+          <div class="clear"></div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- FORGOT PASSWORD FORMS -->
+
+  <div id="forgot-password-form" class="dialog-overlay">
+    <div class="dialog">
+      <div class="close-button">X</div>
+      <h1 class="center">Forgot your password?</h1>
+
+      <form class="form">
+        <div class="form-group">
+          <label>Enter your email address</label> <br>
+          <input type="text" placeholder="Enter email">
+        </div>
+
+        <div class="seperate-line or"></div>
+
+        <div class="form-group">
+          <label>Enter your mobile number</label> <br>
+          <input type="text" value="+65">
+        </div>
+        <div class="form-group">
+          <button type="submit" class="float-left btn btn-color blue rounded">Request reset code</button>
+          <div class="clear"></div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="reset-password-by-phone-form" class="dialog-overlay">
+    <div class="dialog">
+      <div class="close-button">X</div>
+      <h1 class="center">Reset your password</h1>
+
+      <form class="form">
+        <div class="form-group">
+          <label>Enter the code sent to your phone number ending in 83.</label> <br>
+          <input type="text">
+        </div>
+        <div class="form-group">
+          <br>
+          <span>Didn't receive the text message?</span>
+          <ul class="list">
+            <li>
+              <a href="">Resend text message</a>
+            </li>
+            <li>
+              <a href="">Try resetting using email</a>
+            </li>
+          </ul>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="float-left btn btn-color blue rounded">Next</button>
+          <div class="clear"></div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="reset-password-by-email-form" class="dialog-overlay">
+    <div class="dialog">
+      <div class="close-button">X</div>
+      <h1 class="center">Reset your password</h1>
+
+      <form class="form">
+        <div class="form-group">
+          <label>Enter the code sent to your email address</label> <br>
+          <input type="text">
+        </div>
+        <div class="form-group">
+          <br>
+          <span>Didn't receive the text message?</span>
+          <ul class="list">
+            <li>
+              <a href="">Resend email</a>
+            </li>
+            <li>
+              <a href="">Try resetting using phone</a>
+            </li>
+          </ul>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="float-left btn btn-color blue rounded">Next</button>
+          <div class="clear"></div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="reset-password-form" class="dialog-overlay">
+    <div class="dialog">
+      <div class="close-button">X</div>
+      <h1 class="center">Reset your password</h1>
+
+      <form class="form">
+        <div class="form-group">
+          <label>New password</label> <br>
+          <input type="text">
+          <span class="tip">(Password must be 8-12 alphanumeric characters)</span>
+        </div>
+        <div class="form-group">
+          <label>Confirm password</label> <br>
+          <input type="text">
+        </div>
+        <div class="form-group">
+          <button type="submit" class="float-left btn btn-color blue rounded">Reset</button>
+          <div class="clear"></div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- PAGE LAYOUT -->
+
+  <div class="header">
+    <div class="container">
+      <a href="index.html">
+        <div class="float-left logo"></div>
+      </a>
+
+      <button class="float-right btn rounded login-button">Sign in</button>
+      <ul class="float-right nav-bar">
+        <li><a href="patients.html">Patients</a></li>
+        <li><a href="professionals.html">Professionals</a></li>
+        <li><a href="employers.html">Employers</a></li>
+        <li><a href="partners.html">Partners</a></li>
+      </ul>
+
+      <div id="mb-menu-button" class="float-right">
+        <ul class="menu">
+          <a href="patients.html"><li>Patients</li></a>
+          <a href="professionals.html"><li>Professionals</li></a>
+          <a href="employers.html"><li>Employers</li></a>
+          <a href="partners.html"><li>Partners</li></a>
+          <li>Login</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="demo-section-1 bg-color">
+      <div class="container">
+        <div class="row">
+          <div class="col-1">
+            <h1 class="center">
+              Terms and Conditions
+            </h1>
+            <p>We, MyDoc Pte. Ltd. ("we", "ours", "us"), welcome you to our Website (the "Website"). We ask that you review these Terms and Conditions, which are intended to constitute a binding agreement that governs your use of this Website ("Terms And Conditions of Use").</p>
+            <h3>1. Purpose.</h3>
+            <p>The purpose of the Website is to provide information and access to our services, initiatives, background and history.</p>
+            <h3>2. Terms And Conditions of Use.</h3>
+            <p>By using our Website, you agree to be contractually bound to the terms of the Terms And Conditions of Use and Privacy Policy, which shall have the same legal effect as if the Terms And Conditions of Use and Privacy Policy had been personally signed by you. To the extent permitted by law, the Terms And Conditions of Use are intended to supersede any provisions of applicable law which might otherwise limit its enforceability or effect. You agree not to challenge the validity of all electronic records related to your use of the Website as evidence admissible in the courts of law on the grounds of its being in electronic form.</p>
+            <h3>3. Access/ services.</h3>
+            <p>By entering into the Terms And Conditions of Use, you will be granted a revocable license to access the Website. Your access privileges are conditioned on your adherence to the terms of the Terms And Conditions of Use. We reserve the right to temporarily deny you access to the Website or permanently terminate your access privileges at any time if, in our sole discretion, you have failed to abide by the terms of the Terms And Conditions of Use or appear to us likely to do so. By agreeing to grant you access, we do not obligate ourselves to do so or to maintain the Website, or to maintain it in its present form, and we expressly reserve the right to modify, suspend or terminate your access privileges. You agree and understand that we may, in our sole discretion and without any prior notice, close the Website or deny you access to it.</p>
+            <h3>4. Limited License.</h3>
+            <p>Original material which we post on the Website ("the Content") is protected by intellectual property laws. This includes but is not limited to content which is created and owned by us. Such Content includes, but is not limited to, the photographs, images, illustrations, text, video clips, audio clips, designs, logos, trademarks, trade dress and other materials contained in this Website, as well as the software used in the design and development of this Website. You are hereby granted a non-exclusive license to use the Content, but only while accessing this Website. ?The names and marks MyDoc Pte. Ltd, MyDoc, and my-doc and MyDoc logos, and all other MyDoc-related marks depicted in this Website, whether registered or unregistered, are trademarks or service marks of MyDoc Pte. Ltd.?All rights to use the Content are reserved. Among other things, except to the extent required for the limited purpose of reviewing material on our Website, electronic reproduction, adaptation, distribution, performance or display is prohibited. Commercial use of any of the Content is strictly prohibited. Use of any of our trademarks as metatags on other Websites also is strictly prohibited. You may not display this Website in frames (or any of the Content via in-line links) without our express written permission.</p>
+            <h3>5. Disclaimer.</h3>
+            <h3>a. Third Party Intellectual Property Rights.</h3>
+            <p>This Website may contain images, materials, information, news, advertisements, listings, blogs, data, text, songs, audio, videos, graphics, software, webcasts, podcasts, broadcasts, messages, software and other material ("Third Party Content") licensed to MyDoc Pte. Ltd. for use on the Website. Such content is the sole property of its respective owners. Except to the extent required for the limited purpose of reviewing Third Party Content on our Website, electronic reproduction, adaptation, distribution, performance or display of Third Party Content is prohibited.?This Website may also contain references to third party trademarks and names. Such trademarks and names are the sole property of their respective owners.</p>
+            <h3>b. Links.</h3>
+            <p>This Website may also contain hyperlinks to sites operated by publishers other than MyDoc Pte. Ltd. Such hyperlinks are provided for your reference and convenience only. These linked sites are not under MyDoc Pte. Ltds control and may be governed by their own terms of use. We have not developed or reviewed the content appearing in or on such linked sites and you agree not to hold us responsible for the content or operation of such linked sites. A hyperlink does not and should not be deemed to imply that MyDoc Pte. Ltd. in any way endorses, sponsors or supports the content, operator or owner of such linked sites.?You understand that the linked sites may contain illegal or objectionable content or dangerous viruses or other disabling or harmful components. If you decide to access any third party sites linked from our Website, you do so at your sole and exclusive risk. You assume, and MyDoc Pte. Ltds, all responsibility for any loss or injury sustained by you as a user of any linked site, including those caused by malicious actions of third parties in relation to infection by computer virus programs, malicious code or unwanted software that may infect your computer after selecting a link to a third party website provided on our Website.?We make no representation or warranty that the linked sites will conform to any description thereof or perform any desired operations or functions, be uninterrupted or error-free, or be free of viruses, worms, trojan horses or other disabling or harmful components. We do not represent or endorse and hereby disclaim any obligation or responsibility to verify the correctness, quality, accuracy, reliability, performance, completeness, timeliness, or continued availability of any of the content contained on linked sites. No guarantee is made that the links will successfully direct you to the intended third party website, that such website remains available for viewing or that you are not re-directed to an unintended third party website in error or by the action of third parties.</p>
+            <h3>6. LIMITATION OF LIABILITY.</h3>
+            <p>WE DO NOT ACCEPT LIABILITY FOR ANY CONDUCT, ACTS OR OMISSIONS OCCURRING AT THIS WEB SITE OR ANY LOSSES YOU MAY INCUR. IN NO EVENT WILL WE BE LIABLE TO YOU FOR ANY CONSEQUENTIAL, INCIDENTAL OR SPECIAL DAMAGES, INCLUDING ANY LOST PROFITS, EVEN IF YOU CLAIM TO HAVE NOTIFIED US ABOUT SUCH DAMAGES, OR FOR ANY CLAIMS BY ANY THIRD PARTIES.</p>
+            <h3>7. Privacy.</h3>
+            <h3>a. In General.</h3>
+            <p>We collect information about you that you provide to us and from cookie files. We use this information solely for internal analysis or to contact you about offers or promotions that we sponsor. We will not knowingly provide any of this information (except in the form of aggregate statistics that do not link you or your identity to any specific information and do not identify you as a visitor to this Website) to third-parties unless we obtain your permission or are compelled to do so by court order. You agree to respect the privacy rights of other visitors by not publishing or harvesting email addresses obtained at this Website.</p>
+            <h3>b. Privacy Policy.</h3>
+            <p>The Privacy Policy is incorporated into and forms part of the Terms And Conditions of Use. Your acceptance of the Terms And Conditions of Use also includes acceptance of the terms of our Privacy Policy. For more information on our Privacy Policy, kindly refer to this page.</p>
+            <h3>8. Unsolicited Email, Spamming & Spoofing.</h3>
+            <p>You may not use this Website to transmit unsolicited email. You may not send unsolicited email to this Website or to anyone whose email address includes the domain name used on this Website. You may not use our domain name as a pseudonymous return email address for any communications which you transmit from another location or through another service. You may not pretend to be someone elseor spoof their identitywhen using this Website.</p>
+            <h3>9. Violations/ Indemnification.</h3>
+            <p>Your access privileges are conditioned on your adherence to the terms of the Terms And Conditions of Use. If you violate any of the terms of the Terms And Conditions of Use, you agree that we may deny you access to the Website. You further agree, at your own expense, to defend and indemnify us and hold us harmless against all claims which may be asserted against us, and all losses incurred, as a result of any violations of the Terms And Conditions of Use.</p>
+            <h3>10. Complete Terms And Conditions of Use/ No Representations.</h3>
+            <p>The Terms And Conditions of Use constitutes the entire agreement between you and us relating to your access to and use of this Website and supersedes any prior or contemporaneous representations or agreements. Any rights not otherwise expressly granted by the Terms And Conditions of Use are reserved by us. The Terms And Conditions of Use may not be modified, either expressly or by implication, except as set forth below in Section 11.</p>
+            <h3>11. Modifications/ Termination.</h3>
+            <h3>a. In General.</h3>
+            <p>Our employees are not authorized to vary the terms of the Terms And Conditions of Use. The Terms And Conditions of Use may be modified only (1) by obtaining our written consent in a notarized agreement signed by us; or (2) as set forth below in subpart (b).</p>
+            <h3>b. Periodic Revisions.</h3>
+            <p>You agree that we may modify the terms of the Terms And Conditions of Use in our sole discretion, without advance notice, and that your right to access this Website is conditioned on an ongoing basis with your compliance with the then-current version of these Terms and Conditions. We will post a notice on this page for thirty (30) days following any revisions or modifications to the Terms And Conditions of Use. You agree to review this page at least once every thirty (30) days.</p>
+            <h3>12. Dispute Resolution/ Jurisdiction.</h3>
+            <p>In the event of any dispute, controversy or claim arising out of or relating to use of this Website, you agree not to proceed to any form of dispute resolution UNLESS both you and us ("the Parties") have made reasonable efforts to resolve the same through mediation in accordance with the mediation rules of the Singapore Mediation Centre. A Party who receives a notice for mediation from the other Party shall consent and participate in the mediation process. The Terms And Conditions of Use shall be governed by the laws of Singapore. You agree to submit to the exclusive jurisdiction of Singapore Courts to resolve any issue arising from use of this Website.</p>
+            <h3>13. Construction.</h3>
+            <p>If any portion of the Terms And Conditions of Use is ruled invalid or otherwise unenforceable, it shall be deemed amended in order to achieve as closely as possible the same effect as originally drafted. Any invalid or unenforceable portion should be construed as narrowly as possible in order to give effect to as much of the Terms And Conditions of Use as possible.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-3 center">
+          <h3>ABOUT US</h3>
+          <ul class="list no-style">
+            <li><a href="demo.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-3 center">
+          <h3>MYDOC</h3>
+          <ul class="list no-style">
+            <li><a href="patients.html">Patients</a></li>
+            <li><a href="professionals.html">Professionals</a></li>
+            <li><a href="employers.html">Employers</a></li>
+            <li><a href="partners.html">Partners</a></li>
+          </ul>
+        </div>
+        <div class="col-3 center">
+          <h3>LEGAL</h3>
+          <ul class="list no-style">
+            <li>Terms & Conditions</li>
+            <li>Privacy Policy</li>
+          </ul>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

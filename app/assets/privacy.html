@@ -1,0 +1,457 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport">
+  <title>My Doc</title>
+  <link rel="stylesheet" href="/stylesheets/app.css">
+  <script>
+    window.brunch = window.brunch || {};
+    window.brunch['auto-reload'] = {enabled: true};
+  </script>
+  <!-- <script src="/javascripts/vendor.js"></script> -->
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="/javascripts/app.js"></script>
+  <script>require('app')</script>
+</head>
+<body>
+
+  <!-- LOGIN FORMS -->
+
+  <div id="patients-login-form" class="dialog-overlay">
+    <div class="dialog">
+      <div class="tab active">
+        <h3>Patients</h3>
+      </div>
+      <div class="tab doctors-login-link">
+        <h3>Professionals</h3>
+      </div>
+      <div class="clear"></div>
+
+      <form class="form">
+        <div class="form-group">
+          <label for"input-email">Email address</label>
+          <span class="float-right">Need an account? <a href="#" class="patients-signup-link">Sign up</a></span>
+          <br>
+          <input type="text" name="email" id="input-email" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+          <label for"input-password">Password</label> <br>
+          <input type="text" name="password" id="input-password" placeholder="Enter password">
+          <a href="#" class="forgot-password-link">Forgotten your password?</a>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="float-left btn btn-color blue rounded">Login</button>
+          <button type="button" class="float-left btn btn-color gray rounded cancel-button">Cancel</button>
+          <div class="clear"></div>
+        </div>
+        <div class="form-group">
+          <p>
+            By logging in you agree to MyDoc's <a href="#">Terms & Conditions</a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="doctors-login-form" class="dialog-overlay">
+    <div class="dialog">
+      <div class="tab patients-login-link">
+        <h3>Patients</h3>
+      </div>
+      <div class="tab active">
+        <h3>Professionals</h3>
+      </div>
+      <div class="clear"></div>
+
+      <form class="form">
+        <div class="form-group">
+          <label for"input-email">Email address</label>
+          <span class="float-right">Need an account? <a href="#" class="doctors-signup-link">Sign up</a></span>
+          <br>
+          <input type="text" name="email" id="input-email" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+          <label for"input-password">Password</label> <br>
+          <input type="text" name="password" id="input-password" placeholder="Enter password">
+          <a href="#" class="forgot-password-link">Forgotten your password?</a>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="float-left btn btn-color blue rounded">Login</button>
+          <button type="button" class="float-left btn btn-color gray rounded cancel-button">Cancel</button>
+          <div class="clear"></div>
+        </div>
+        <div class="form-group">
+          <p>
+            By logging in you agree to MyDoc's <a href="#">Terms & Conditions</a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- SIGNUP FORMS -->
+
+  <div id="patients-signup-form" class="dialog-overlay">
+    <div class="dialog">
+      <div class="close-button">X</div>
+      <h1 class="center">Registration Form</h1>
+
+      <form class="form">
+        <div class="form-group">
+          <input type="text" value="+65">
+          <span class="tip">(Don't worry, only used for verification)</span>
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Enter the code sent to your phone">
+          <span class="tip"><a href="#">Send code</a></span>
+        </div>
+
+        <div class="seperate-line"></div>
+
+        <div class="form-group">
+          <input type="text" value="+65 8389 9492">
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="First name">
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Last name">
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Email">
+          <span class="tip">(This will be your username for the login)</span>
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Password">
+          <span class="tip">(Password must be 8-12 alphanumeric characters)</span>
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Confirm password">
+        </div>
+        <div class="form-group">
+          <input type="checkbox" name="checkbox" id="tac" value="value">
+          <label for="tac">I accept the <a href="">Term & Conditions</a></label>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="float-left btn btn-color blue rounded">Register</button>
+          <div class="clear"></div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="doctors-signup-form" class="dialog-overlay">
+    <div class="dialog">
+      <div class="close-button">X</div>
+      <h1 class="center">Registration Form</h1>
+
+      <form class="form">
+        <div class="form-group">
+          <input type="text" value="+65">
+          <span class="tip">(Don't worry, only used for verification)</span>
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Enter the code sent to your phone">
+          <span class="tip"><a href="#">Send code</a></span>
+        </div>
+
+        <div class="seperate-line"></div>
+
+        <div class="form-group">
+          <input type="text" value="+65 8389 9492">
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="First name">
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Last name">
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Title">
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Enter your MCR number *">
+          <span class="tip">*It's optional. But it would be easier for us to verify you as a professional.</span>
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Email">
+          <span class="tip">(This will be your username for the login)</span>
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Password">
+          <span class="tip">(Password must be 8-12 alphanumeric characters)</span>
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Confirm password">
+        </div>
+        <div class="form-group">
+          <input type="checkbox" name="checkbox" id="tac" value="value">
+          <label for="tac">I accept the <a href="">Term & Conditions</a></label>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="float-left btn btn-color blue rounded">Register</button>
+          <div class="clear"></div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- FORGOT PASSWORD FORMS -->
+
+  <div id="forgot-password-form" class="dialog-overlay">
+    <div class="dialog">
+      <div class="close-button">X</div>
+      <h1 class="center">Forgot your password?</h1>
+
+      <form class="form">
+        <div class="form-group">
+          <label>Enter your email address</label> <br>
+          <input type="text" placeholder="Enter email">
+        </div>
+
+        <div class="seperate-line or"></div>
+
+        <div class="form-group">
+          <label>Enter your mobile number</label> <br>
+          <input type="text" value="+65">
+        </div>
+        <div class="form-group">
+          <button type="submit" class="float-left btn btn-color blue rounded">Request reset code</button>
+          <div class="clear"></div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="reset-password-by-phone-form" class="dialog-overlay">
+    <div class="dialog">
+      <div class="close-button">X</div>
+      <h1 class="center">Reset your password</h1>
+
+      <form class="form">
+        <div class="form-group">
+          <label>Enter the code sent to your phone number ending in 83.</label> <br>
+          <input type="text">
+        </div>
+        <div class="form-group">
+          <br>
+          <span>Didn't receive the text message?</span>
+          <ul class="list">
+            <li>
+              <a href="">Resend text message</a>
+            </li>
+            <li>
+              <a href="">Try resetting using email</a>
+            </li>
+          </ul>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="float-left btn btn-color blue rounded">Next</button>
+          <div class="clear"></div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="reset-password-by-email-form" class="dialog-overlay">
+    <div class="dialog">
+      <div class="close-button">X</div>
+      <h1 class="center">Reset your password</h1>
+
+      <form class="form">
+        <div class="form-group">
+          <label>Enter the code sent to your email address</label> <br>
+          <input type="text">
+        </div>
+        <div class="form-group">
+          <br>
+          <span>Didn't receive the text message?</span>
+          <ul class="list">
+            <li>
+              <a href="">Resend email</a>
+            </li>
+            <li>
+              <a href="">Try resetting using phone</a>
+            </li>
+          </ul>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="float-left btn btn-color blue rounded">Next</button>
+          <div class="clear"></div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="reset-password-form" class="dialog-overlay">
+    <div class="dialog">
+      <div class="close-button">X</div>
+      <h1 class="center">Reset your password</h1>
+
+      <form class="form">
+        <div class="form-group">
+          <label>New password</label> <br>
+          <input type="text">
+          <span class="tip">(Password must be 8-12 alphanumeric characters)</span>
+        </div>
+        <div class="form-group">
+          <label>Confirm password</label> <br>
+          <input type="text">
+        </div>
+        <div class="form-group">
+          <button type="submit" class="float-left btn btn-color blue rounded">Reset</button>
+          <div class="clear"></div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- PAGE LAYOUT -->
+
+  <div class="header">
+    <div class="container">
+      <a href="index.html">
+        <div class="float-left logo"></div>
+      </a>
+
+      <button class="float-right btn rounded login-button">Sign in</button>
+      <ul class="float-right nav-bar">
+        <li><a href="patients.html">Patients</a></li>
+        <li><a href="professionals.html">Professionals</a></li>
+        <li><a href="employers.html">Employers</a></li>
+        <li><a href="partners.html">Partners</a></li>
+      </ul>
+
+      <div id="mb-menu-button" class="float-right">
+        <ul class="menu">
+          <a href="patients.html"><li>Patients</li></a>
+          <a href="professionals.html"><li>Professionals</li></a>
+          <a href="employers.html"><li>Employers</li></a>
+          <a href="partners.html"><li>Partners</li></a>
+          <li>Login</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="demo-section-1 bg-color">
+      <div class="container">
+        <div class="row">
+          <div class="col-1">
+            <h3>Purpose</h3>
+            <p>As part of MyDoc Pte. Ltd. ("MyDoc")'s commitment to act with integrity and respect individual privacy, we protect the personal data of our stakeholders, including employees, customers, shareholders, partners, suppliers and other individuals who trust us with information. "Personal data" includes any information, which identifies or locates an individual, or is capable of doing so. To be a trusted business partner, MyDoc continually strives to protect personal data in accordance with applicable laws and regulations and industry standards. To that end, this policy guides how MyDoc collects, uses, stores, transfers and secures personal data.</p>
+            <h1 class="center">Privacy Policy</h1>
+            <p>MyDoc addresses the complexities and critical needs of today's healthcare environment by providing a health data management tool ("HDM") to physicians and a personal health record ("PHR") to their patients. MyDoc is dedicated to protecting the privacy of the users of any of our products or services and obtains personal data only for business-related purposes, which may include, but are not limited to, designing, developing, selling and deploying a HDM, PHR and other health and wellness products and providing related support and other services, acquiring information as legally required and providing consultancy or advisory services to operators and other customers within the health and wellness umbrellas. MyDoc's HDM and PHR are developed for the highest levels of performance. We utilize world-class data centers equipped with modern technology to securely house sensitive data. MyDoc has numerous security measures in place to help protect against the loss, misuse, or alteration of information within the system. These measures include encryption of communications using the Secure Socket Layer (SSL) system, and using a secure messaging system when you transmit personal information or requests to your medical providers or patients through our app or website. If you are a user of our app or web-based services for physicians or our patient app or website, you sign a user agreement that explains how we use and disclose health information, and we have additional privacy policies for users of these services. The user agreements and additional privacy policies take precedence over this policy. You can find the user agreement and privacy policy for our physician portal here, and for our patient portal here. Please read these carefully before you use these services.</p>
+            <h3>Revisions, changes, and updates</h3>
+            <p>MyDoc may revise and update the Privacy Policy at any time, without notice to you. We encourage you to periodically reread this Privacy Policy, to see if there have been any changes to our policies that may affect you.</p>
+            <h3>Educational Information</h3>
+            <p>MyDoc may revise and update the Privacy Policy at any time, without notice to you. We encourage you to periodically reread this Privacy Policy, to see if there have been any changes to our policies that may affect you.</p>
+            <h3>User Forums</h3>
+            <p>We may offer forums for the exchange of information among our users. You agree to assume all responsibility for your use of such forums. In particular, you understand that we do not assure the accuracy, reliability, confidentiality or security of information made available through the use of our forums. You should understand that any information you disclose through our user forums will be accessible to the public. You agree that any information you place in user forums will become the exclusive property of MyDoc.</p>
+            <h3>Visitor data</h3>
+            <p>MyDoc maintains permission to gather information on basic usage, such as numbers of visits, visitor source and visitor activity. This data is collected for the purposes of improving the overall user experience.</p>
+            <h3>Password protection</h3>
+            <p>Access to our products are password protected. We strongly recommend that you do not divulge your password to anyone and that you update your credentials on a regular basis. Exercise the utmost personal security in how you handle your password. MyDoc will never ask for your password in an unsolicited phone call or unsolicited email.</p>
+            <h3>Emails</h3>
+            <p>Your email address is never used for any purpose other than to communicate with you or on your behalf. Your email may also be used for forgotten password or user account information, and in the future it may be used as a tool for messaging. Unless you opt out, we may also use your email address to send you promotional and marketing materials. MyDoc never shares your email address with external companies. Additionally, users may revoke their email permission at any time to opt out of receiving any future information. Simply contact us at: office@my-doc.com, or by mail at the address below: MyDoc, тЈ43A HongKong Street, Singapore, 059682</p>
+            <h3>Surveys, questionnaires, and polls</h3>
+            <p>MyDoc may ask you to participate in use surveys, questionnaires, or polls, to facilitate feedback and input from our users. When you respond to surveys, questionnaires or polls related to our site, this information is collected only as anonymous, aggregated information and is used for statistical purposes.</p>
+            <h3>Marketing Products and Services</h3>
+            <p>We may place advertisements concerning the products and services of third parties on the interface to our services, so that you see them when you use the services. Unless you opt out, we may also email marketing materials to you. We may receive remuneration from the suppliers of these products and services for placing their advertisements. We may use computerized processes to tailor the advertisements to you or to your use of the system. However, except as described above, we will not disclose to any third party any information that identifies you to enable the third party to market products or services to you directly.</p>
+            <h3>Internet cookies</h3>
+            <p>Each time you visit one of the Sites, MyDoc collects the limited information that your browser makes available whenever you visit any website. Additionally, MyDoc may place internet "cookies" on the computer hard drives of visitors to this website. Information we obtain from cookies helps us to tailor our site to be more helpful and efficient for our visitors. The cookie consists of a unique identifier that does not contain information about you or your health history. We use two types of cookies, "session" cookies and "persistent" cookies. A session cookie is temporary, and expires after you end a session and close your web browser. We use session cookies to help customize your experience on our site, and maintain your signed-on status as you navigate through the features. Persistent cookies remain on your hard drive after you've exited from our site, until you erase them or they expire. Persistent cookies will not contain any personal information about you.</p>
+            <h3>Links to Other Materials</h3>
+            <p>This site provides links to sites operated by third parties. MyDoc has no control over the content of such linked sites, and is not responsible for it, or for the effect of your accessing a site through a link on our site. You should assume that any information that does not bear the MyDoc logo is operated by a third party, and you should read the siteтs privacy notice before using it.</p>
+            <h3>Age Limitation</h3>
+            <p>We have no intention of accepting any information from individuals under the age of 18. If you are not yet 18 years of age, please leave this site immediately. Parents are urged to monitor and supervise their childrensт on-line activity.</p>
+            <h3>Use of Your Information</h3>
+            <p>We collect health information about you and store it in a personal health record. The health record created is the property of MyDoc, though the health information it contains is your property. We use the information that we collect from you to provide our services to you. For this, we disclose health information to our employees and others involved in providing the care that you need. In addition to this we may use the information for one or more of the following purposes:</p>
+            <ol style="list-style-type:lower-roman;">
+              <br/>
+              <li>To provide information to you that you request from us relating to our services.   We may share your health information with other doctors or health care providers who will provide services to you through us. </li>
+              <br/>
+              <li>We may use and disclose health information about you as required for the operation of MyDoc. We may use and disclose this information to review and improve the quality of care we provide, or the competence and qualifications of our professional staff.  </li>
+              <br/>
+              <li>To provide information to you relating to other products that may be of interest to you. Such additional information will only be provided where you have consented to receive such information. </li>
+              <br/>
+              <li>To inform you of any changes to our website, services or goods and products.</li>
+              <br/>
+              <li>We may use the information to contact and remind you about appointments made through us.</li>
+              <br/>
+              <li>We may also use and disclose this information as necessary for medical reviews, legal services and audits, including fraud and abuse detection and compliance programs and business planning and management.</li>
+              <br/>
+            </ol>
+            <p>If you have previously used our services, we may provide to you details of similar goods or services, or other goods and services that you may be interested in.</p>
+            <p>Where your consent has been provided in advance we may allow selected third parties to use your data to enable them to provide you with information regarding unrelated goods and services which we believe may interest you. Where such consent has been provided it can be withdrawn by you at any time. Third parties may include, where applicable,</p>
+            <ol style="list-style-type:lower-roman;">
+              <br/>
+              <li>your insurers who will require proof of services rendered and/or a medical report before payment is made to MyDoc; or if they are required to authorize services or referrals.</li>
+              <br/>
+              <li> third party service providers who have provided services to you or your physician (e,g x-ray services or lab testing services) in order to obtain test results or for the purposes of issuing invoices.</li>
+              <br/>
+              <li>our "business associates," such as our associates providing billing service, or performing administrative services for us.  MyDoc enters agreements with each of these business associates that requires these service providers to protect confidentiality and security of all information extended to them.</li>
+              <br/>
+              <li><u>Providers generating psychotherapy Notes (if applicable).</u>  We will <u>not use or disclose your psychotherapy notes without your prior written authorization except for the following:</u> 1) use by the originator of the notes for your treatment, 2) for training our staff, students and other trainees, 3) to defend ourselves if you sue us or bring some other legal proceeding, 4) if the law requires us to disclose the information to you or to another body or for some other reason, 5) in response to health oversight activities concerning your psychotherapist, 6) to avert a serious and imminent threat to health or safety, or 7) to the coroner or medical examiner after you die. To the extent you revoke an authorization to use or disclose your psychotherapy notes, we will stop using or disclosing these notes.</li>
+              <br/>
+            </ol>
+            <h3>Storing Your Personal Data</h3>
+            <p>In operating our website it may become necessary to transfer data that we collect from you to locations outside of Singapore for processing and storing. By providing your personal data to us, you agree to this transfer, storing or processing. We do our upmost to ensure that all reasonable steps are taken to make sure that your data is treated stored securely. </p>
+            <p>MyDoc protects personal data from loss, misuse, or unauthorized access, disclosure, alteration or destruction. We store personal data, regardless of its form, with security procedures appropriate to the sensitivity of the data.</p>
+            <p>Unfortunately the sending of information via the internet is not totally secure and on occasion such information can be intercepted. We cannot guarantee the security of data that you choose to send us electronically, Sending such information is entirely at your own risk.</p>
+            <h3>Disclosing Your Information</h3>
+            <p>We will not disclose your personal information to any other party other than in accordance with this Privacy Policy and in the circumstances detailed below:</p>
+            <ol style="list-style-type:lower-roman;">
+              <br/>
+              <li> In the event that we sell any or all of our business to the buyer.</li>
+              <br/>
+              <li> Where we are legally required by law to disclose your personal information.</li>
+              <br/>
+              <li>To further fraud protection and reduce the risk of fraud.</li>
+              <br/>
+            </ol>
+            <h3>Third Party Links</h3>
+            <p>On occasion we include links to third parties on this website. Where we provide a link it does not mean that we endorse or approve that siteтs policy towards visitor privacy. You should review their privacy policy before sending them any personal data.</p>
+            <h3>Personal Data Protection</h3>
+            <p>In accordance with the Personal Data Protection Act, except as described in this Privacy Policy, MyDoc will not use personal and/or health information which identifies you without your written authorization. We work to ensure that personal data is accurate, complete and reliable for its intended use. If you do authorize MyDoc to use or disclose your personal and/or health information for another purpose, you may revoke your authorization in writing at any time. You are entitled to access your personal data at any time by requesting for the same in writing. As costs are incurred by MyDoc in recovering the personal data, MyDoc reserves the right to charge S$15 for the recovery of personal data requested.</p>
+            <p>You have the right to request that MyDoc amends your personal and/or health information that you believe is incomplete or incorrect. You must make a request to amend in writing. We may deny the request if we do not have the information or did not create the information. </p>
+            <h3>Questions, complaints, and contacts</h3>
+            <p>If you have any questions about this Privacy Statement, our policies and practices, your rights under this statement, and your dealings with the MyDoc, send an email to support, or by mail at the address below: 43A HongKong Street Singapore 059682.</p>
+            <p>Dated: 13 January 2014.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-3 center">
+          <h3>ABOUT US</h3>
+          <ul class="list no-style">
+            <li><a href="demo.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-3 center">
+          <h3>MYDOC</h3>
+          <ul class="list no-style">
+            <li><a href="patients.html">Patients</a></li>
+            <li><a href="professionals.html">Professionals</a></li>
+            <li><a href="employers.html">Employers</a></li>
+            <li><a href="partners.html">Partners</a></li>
+          </ul>
+        </div>
+        <div class="col-3 center">
+          <h3>LEGAL</h3>
+          <ul class="list no-style">
+            <li>Terms & Conditions</li>
+            <li>Privacy Policy</li>
+          </ul>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
