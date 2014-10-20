@@ -118,8 +118,9 @@ input, textarea {
   -webkit-appearance: none;
   display: inline-block;
   height: 36px;
+  line-height: 36px;
   margin: 0;
-  padding: 10px 15px;
+  padding: 0 15px;
   font-family: "Proxima Nova", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -138,7 +139,8 @@ input, textarea {
 .btn-large {
   @extend .btn;
   height: 48px;
-  padding: 12px 30px;
+  line-height: 48px;
+  padding: 0 30px;
   font-size: 18px;
   font-weight: 300;
   &.rounded { @include border-radius(24px); }
@@ -352,5 +354,5 @@ input, textarea {
 @import "home";
 @import "patients";
 @import "professionals";
-@import "employers";
+
 @import "demo";

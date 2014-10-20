@@ -130,8 +130,9 @@ input, textarea {
   -webkit-appearance: none;
   display: inline-block;
   height: 36px;
+  line-height: 36px;
   margin: 0;
-  padding: 10px 15px;
+  padding: 0 15px;
   font-family: "Proxima Nova", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -160,7 +161,8 @@ input, textarea {
 
 .btn-large {
   height: 48px;
-  padding: 12px 30px;
+  line-height: 48px;
+  padding: 0 30px;
   font-size: 18px;
   font-weight: 300; }
   .btn-large.rounded {
@@ -674,12 +676,6 @@ input, textarea {
   left: 20px;
   right: 20px;
   bottom: 0; }
-
-.employers-section-5 .btn-large {
-  width: 300px; }
-  @media only screen and (max-width: 768px) {
-    .employers-section-5 .btn-large {
-      width: 100%; } }
 
 @media only screen and (max-width: 768px) {
   .demo-section-1 h1 {
