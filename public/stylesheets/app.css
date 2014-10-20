@@ -337,6 +337,10 @@ input, textarea {
       position: relative;
       top: 20px;
       left: 90px; }
+    .home-desktop .home-section-2 .container h1 {
+      margin-bottom: 10px; }
+    .home-desktop .home-section-2 .container h3, .home-desktop .home-section-2 .container .list {
+      margin: 10px 0; }
 .home-desktop .home-section-3 {
   overflow: hidden;
   background-color: #f8f9f7;
@@ -363,6 +367,10 @@ input, textarea {
       position: relative;
       top: 20px;
       left: 120px; }
+    .home-desktop .home-section-3 .container h1 {
+      margin-bottom: 10px; }
+    .home-desktop .home-section-3 .container h3, .home-desktop .home-section-3 .container .list {
+      margin: 10px 0; }
 .home-desktop .home-section-4 {
   overflow: hidden;
   background-color: #f8f9f7;
@@ -389,6 +397,10 @@ input, textarea {
       position: relative;
       top: 20px;
       left: 90px; }
+    .home-desktop .home-section-4 .container h1 {
+      margin-bottom: 10px; }
+    .home-desktop .home-section-4 .container h3, .home-desktop .home-section-4 .container .list {
+      margin: 10px 0; }
 .home-desktop .home-section-5 {
   overflow: hidden;
   background-color: #f8f9f7;
@@ -415,6 +427,10 @@ input, textarea {
       position: relative;
       top: 20px;
       left: 120px; }
+    .home-desktop .home-section-5 .container h1 {
+      margin-bottom: 10px; }
+    .home-desktop .home-section-5 .container h3, .home-desktop .home-section-5 .container .list {
+      margin: 10px 0; }
 
 .home-mb {
   display: none; }
