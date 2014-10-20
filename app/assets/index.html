@@ -15,7 +15,13 @@
 </head>
 <body>
 
-  <!-- LOGIN FORMS -->
+  <!-- IMPORTANT:
+    The form templates, like login/signup/reset password forms,
+    are dubplicated between pages for now. They need to be 
+    splitted into templates for maintenance later.
+  -->
+
+  <!-- PATIENTS LOGIN TEMPLATE -->
 
   <div id="patients-login-form" class="dialog-overlay">
     <div class="dialog">
@@ -53,6 +59,8 @@
     </div>
   </div>
 
+  <!-- DOCTORS LOGIN TEMPLATE -->
+
   <div id="doctors-login-form" class="dialog-overlay">
     <div class="dialog">
       <div class="tab patients-login-link">
@@ -89,7 +97,7 @@
     </div>
   </div>
 
-  <!-- SIGNUP FORMS -->
+  <!-- PATIENTS SIGNUP TEMPLATE -->
 
   <div id="patients-signup-form" class="dialog-overlay">
     <div class="dialog">
@@ -139,6 +147,8 @@
       </form>
     </div>
   </div>
+
+  <!-- DOCTORS SIGNUP TEMPLATE -->
 
   <div id="doctors-signup-form" class="dialog-overlay">
     <div class="dialog">
@@ -196,7 +206,7 @@
     </div>
   </div>
 
-  <!-- FORGOT PASSWORD FORMS -->
+  <!-- FORGOT PASSWORD TEMPLATE -->
 
   <div id="forgot-password-form" class="dialog-overlay">
     <div class="dialog">
@@ -222,6 +232,8 @@
       </form>
     </div>
   </div>
+
+  <!-- RESET PASSWORD BY PHONE TEMPLATE -->
 
   <div id="reset-password-by-phone-form" class="dialog-overlay">
     <div class="dialog">
@@ -253,6 +265,8 @@
     </div>
   </div>
 
+  <!-- RESET PASSWORD BY EMAIL TEMPLATE -->
+
   <div id="reset-password-by-email-form" class="dialog-overlay">
     <div class="dialog">
       <div class="close-button">X</div>
@@ -282,6 +296,8 @@
       </form>
     </div>
   </div>
+
+  <!-- RESET PASSWORD TEMPLATE -->
 
   <div id="reset-password-form" class="dialog-overlay">
     <div class="dialog">
@@ -328,7 +344,7 @@
           <a href="professionals.html"><li>Professionals</li></a>
           <a href="employers.html"><li>Employers</li></a>
           <a href="partners.html"><li>Partners</li></a>
-          <a href="#"><li>Login</li></a>
+          <a href="#" class="patients-login-link"><li>Login</li></a>
         </ul>
       </div>
     </div>
