@@ -104,6 +104,12 @@ $(function(){
   $mbMenuButton.find('.menu').click(function(e){
     e.stopPropagation();
   });
+
+  $('.login-button').click(function(e){
+    e.preventDefault();
+    $('#dialog-overlay').show();
+    $('body').addClass('opened-dialog');
+  });
 });
 
 });

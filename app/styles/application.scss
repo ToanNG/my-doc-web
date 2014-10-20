@@ -50,9 +50,30 @@ input, textarea {
 
 // Components // --------------------------------------------------
 
+#dialog-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: auto;
+  background-color: rgba(0,0,0,.5);
+  z-index: 11;
+}
+
+.dialog {
+  max-width: 390px;
+  height: 1000px;
+  margin: 90px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  @include border-radius(5px);
+}
+
 .container {
   max-width: 960px;
-  padding: 0.1px 20px;
+  padding: 1px 20px;
   margin: 0 auto;
 
   .row {
@@ -172,6 +193,10 @@ input, textarea {
 .table-cell {
   display: table-cell;
   vertical-align: middle;
+}
+
+.opened-dialog {
+  overflow: hidden;
 }
 
 .bg-color {
