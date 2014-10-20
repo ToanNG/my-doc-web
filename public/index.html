@@ -14,7 +14,8 @@
   <script>require('app')</script>
 </head>
 <body>
-  <!-- FORMS -->
+
+  <!-- LOGIN FORMS -->
 
   <div id="patients-login-form" class="dialog-overlay">
     <div class="dialog">
@@ -88,10 +89,12 @@
     </div>
   </div>
 
-  <div id="doctors-signup-form" class="dialog-overlay" style="display: block;">
+  <!-- SIGNUP FORMS -->
+
+  <div id="patients-signup-form" class="dialog-overlay">
     <div class="dialog">
       <div class="close-button">X</div>
-      <h3 class="center">Registration Form</h3>
+      <h1 class="center">Registration Form</h1>
 
       <form class="form">
         <div class="form-group">
@@ -102,7 +105,58 @@
           <input type="text" placeholder="Enter the code sent to your phone">
           <span class="tip"><a href="#">Send code</a></span>
         </div>
-        <hr>
+
+        <div class="seperate-line"></div>
+
+        <div class="form-group">
+          <input type="text" value="+65 8389 9492">
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="First name">
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Last name">
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Email">
+          <span class="tip">(This will be your username for the login)</span>
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Password">
+          <span class="tip">(Password must be 8-12 alphanumeric characters)</span>
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Confirm password">
+        </div>
+        <div class="form-group">
+          <input type="checkbox" name="checkbox" id="tac" value="value">
+          <label for="tac">I accept the <a href="">Term & Conditions</a></label>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="float-left btn btn-color blue rounded">Register</button>
+          <div class="clear"></div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="doctors-signup-form" class="dialog-overlay">
+    <div class="dialog">
+      <div class="close-button">X</div>
+      <h1 class="center">Registration Form</h1>
+
+      <form class="form">
+        <div class="form-group">
+          <input type="text" value="+65">
+          <span class="tip">(Don't worry, only used for verification)</span>
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Enter the code sent to your phone">
+          <span class="tip"><a href="#">Send code</a></span>
+        </div>
+
+        <div class="seperate-line"></div>
+
         <div class="form-group">
           <input type="text" value="+65 8389 9492">
         </div>
@@ -141,6 +195,118 @@
       </form>
     </div>
   </div>
+
+  <!-- FORGOT PASSWORD FORMS -->
+
+  <div id="forgot-password-form" class="dialog-overlay">
+    <div class="dialog">
+      <div class="close-button">X</div>
+      <h1 class="center">Forgot your password?</h1>
+
+      <form class="form">
+        <div class="form-group">
+          <label>Enter your email address</label> <br>
+          <input type="text" placeholder="Enter email">
+        </div>
+
+        <div class="seperate-line or"></div>
+
+        <div class="form-group">
+          <label>Enter your mobile number</label> <br>
+          <input type="text" value="+65">
+        </div>
+        <div class="form-group">
+          <button type="submit" class="float-left btn btn-color blue rounded">Request reset code</button>
+          <div class="clear"></div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="reset-password-by-phone-form" class="dialog-overlay">
+    <div class="dialog">
+      <div class="close-button">X</div>
+      <h1 class="center">Reset your password</h1>
+
+      <form class="form">
+        <div class="form-group">
+          <label>Enter the code sent to your phone number ending in 83.</label> <br>
+          <input type="text">
+        </div>
+        <div class="form-group">
+          <br>
+          <span>Didn't receive the text message?</span>
+          <ul class="list">
+            <li>
+              <a href="">Resend text message</a>
+            </li>
+            <li>
+              <a href="">Try resetting using email</a>
+            </li>
+          </ul>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="float-left btn btn-color blue rounded">Next</button>
+          <div class="clear"></div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="reset-password-by-email-form" class="dialog-overlay">
+    <div class="dialog">
+      <div class="close-button">X</div>
+      <h1 class="center">Reset your password</h1>
+
+      <form class="form">
+        <div class="form-group">
+          <label>Enter the code sent to your email address</label> <br>
+          <input type="text">
+        </div>
+        <div class="form-group">
+          <br>
+          <span>Didn't receive the text message?</span>
+          <ul class="list">
+            <li>
+              <a href="">Resend email</a>
+            </li>
+            <li>
+              <a href="">Try resetting using phone</a>
+            </li>
+          </ul>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="float-left btn btn-color blue rounded">Next</button>
+          <div class="clear"></div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="reset-password-form" class="dialog-overlay">
+    <div class="dialog">
+      <div class="close-button">X</div>
+      <h1 class="center">Reset your password</h1>
+
+      <form class="form">
+        <div class="form-group">
+          <label>New password</label> <br>
+          <input type="text">
+          <span class="tip">(Password must be 8-12 alphanumeric characters)</span>
+        </div>
+        <div class="form-group">
+          <label>Confirm password</label> <br>
+          <input type="text">
+        </div>
+        <div class="form-group">
+          <button type="submit" class="float-left btn btn-color blue rounded">Reset</button>
+          <div class="clear"></div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- PAGE LAYOUT -->
 
   <div class="header">
     <div class="container">

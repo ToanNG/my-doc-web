@@ -102,6 +102,26 @@ input, textarea {
     cursor: pointer;
   }
 
+  .seperate-line {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: -20px;
+    margin-right: -20px;
+    border-top: solid thin #cccccc;
+
+    &.or {
+      &:before {
+        content: "Or";
+        display: block;
+        width: 50px;
+        margin: -10px auto 0;
+        font-size: 1.25em;
+        text-align: center;
+        background-color: #ffffff;
+      }
+    }
+  }
+
   .tip {
     margin-left: 15px;
     font-size: 14px;

@@ -29,10 +29,31 @@ $(function(){
     $('body').addClass('opened-dialog');
   });
 
+  $('.patients-signup-link').click(function(e){
+    e.preventDefault();
+    $dialogOverlay.hide();
+    $('#patients-signup-form').show();
+    $('body').addClass('opened-dialog');
+  });
+
   $('.doctors-login-link').click(function(e){
     e.preventDefault();
     $dialogOverlay.hide();
     $('#doctors-login-form').show();
+    $('body').addClass('opened-dialog');
+  });
+
+  $('.doctors-signup-link').click(function(e){
+    e.preventDefault();
+    $dialogOverlay.hide();
+    $('#doctors-signup-form').show();
+    $('body').addClass('opened-dialog');
+  });
+
+  $('.forgot-password-link').click(function(e){
+    e.preventDefault();
+    $dialogOverlay.hide();
+    $('#forgot-password-form').show();
     $('body').addClass('opened-dialog');
   });
 });
