@@ -12,15 +12,27 @@ $(function(){
     e.stopPropagation();
   });
 
-  $('.login-button').click(function(e){
-    // e.preventDefault();
-    $('#dialog-overlay').show();
+
+
+  var $dialogOverlay = $('.dialog-overlay');
+
+  $('.cancel-button, .close-button').click(function(e){
+    e.preventDefault();
+    $dialogOverlay.hide();
+    $('body').removeClass('opened-dialog');
+  });
+
+  $('.patients-login-link, .login-button').click(function(e){
+    e.preventDefault();
+    $dialogOverlay.hide();
+    $('#patients-login-form').show();
     $('body').addClass('opened-dialog');
   });
 
-  $('.cancel-button').click(function(e){
-    // e.preventDefault();
-    $('#dialog-overlay').hide();
-    $('body').removeClass('opened-dialog');
+  $('.doctors-login-link').click(function(e){
+    e.preventDefault();
+    $dialogOverlay.hide();
+    $('#doctors-login-form').show();
+    $('body').addClass('opened-dialog');
   });
 });

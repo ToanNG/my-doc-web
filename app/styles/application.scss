@@ -50,7 +50,7 @@ input, textarea {
 
 // Components // --------------------------------------------------
 
-#dialog-overlay {
+.dialog-overlay {
   display: none;
   position: fixed;
   top: 0;
@@ -63,11 +63,55 @@ input, textarea {
 }
 
 .dialog {
-  max-width: 390px;
+  overflow: hidden;
+  position: relative;
+  max-width: 600px;
   margin: 90px auto;
-  padding: 20px;
   background-color: #ffffff;
   @include border-radius(5px);
+
+  .tab {
+    float: left;
+    width: 50%;
+    text-align: center;
+    background-color: #f3f5f2;
+    cursor: pointer;
+
+    &.active { background-color: #ffffff; }
+  }
+
+  .form {
+    max-width: 520px;
+  }
+
+  .btn {
+    min-width: 100px;
+    margin: 10px 10px 10px 0;
+  }
+
+  .close-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: gray;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  .tip {
+    margin-left: 15px;
+    font-size: 14px;
+    color: gray;
+  }
+
+  a {
+    color: #7d94b4;
+    text-decoration: none;
+  }
 }
 
 .container {
@@ -160,6 +204,14 @@ input, textarea {
       @include box-shadow(0 0 20px #7f93b6);
     }
   }
+
+  &.gray {
+    color: #273758;
+    background-color: #f3f5f2;
+    &:active {
+      @include box-shadow(0 0 20px #f3f5f2);
+    }
+  }
 }
 
 .form {
@@ -171,7 +223,10 @@ input, textarea {
     margin: 1em 0;
   }
 
-  input, textarea {
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  textarea {
     width: 100%;
     margin: 5px 0;
   }
