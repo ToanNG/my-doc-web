@@ -16,10 +16,14 @@ $(function(){
 
   var $dialogOverlay = $('.dialog-overlay');
 
-  $('.cancel-button, .close-button').click(function(e){
+  $('.cancel-button, .close-button, .dialog-overlay').click(function(e){
     e.preventDefault();
     $dialogOverlay.hide();
     $('body').removeClass('opened-dialog');
+  });
+
+  $('.dialog').click(function(e){
+    e.stopPropagation();
   });
 
   $('.patients-login-link, .login-button').click(function(e){
